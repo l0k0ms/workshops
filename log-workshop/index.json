@@ -4,27 +4,69 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
-        "text": "step1.md"
+        "title": "Datadog Setup",
+        "text": "steps/step1.md",
+        "courseData": "scripts/step1.sh",
+        "verify": "scripts/step1_verify.sh"
       },
       {
-        "title": "Step 2",
-        "text": "step2.md"
+        "title": "Getting Started",
+        "text": "steps/step2.md",
+        "code": "scripts/step2.sh"
       },
       {
-        "title": "Step 3",
-        "text": "step3.md"
+        "title": "Gathering our first logs",
+        "text": "steps/step3.md"
+      },
+      {
+        "title": "Using Label to correctly tag logs",
+        "text": "steps/step4.md"
+      },
+      {
+        "title": "Switching between Traces and Logs",
+        "text": "steps/step5.md"
+      },
+      {
+        "title": "Switching between Metrics and Logs",
+        "text": "steps/step6.md"
+      },
+      {
+        "title": "Logging without limit",
+        "text": "steps/step7.md"
+      },
+      {
+        "title": "Live tail",
+        "text": "steps/step8.md"
+      },
+      {
+        "title": "Parsing a full text log into JSON",
+        "text": "steps/step9.md"
+      },
+      {
+        "title": "Adding attribute as a Facet",
+        "text": "steps/step10.md"
+      },
+      {
+        "title": "Multi-line logs",
+        "text": "steps/step11.md"
+      },
+      {
+        "title": "Monitoring your logs",
+        "text": "steps/step12.md"
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "steps/intro.md"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "steps/finish.md"
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "editor-terminal",
+    "uieditorpath": "/log-workshop",
+    "showdashboard": true,
+    "dashboards": [{"name": "APPLICATION DASHBOARD", "port": 5000}]
   },
   "backend": {
     "imageid": "ubuntu"
