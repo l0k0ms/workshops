@@ -1,6 +1,6 @@
 The service tag now allows us to switch between our log explorer view and the corresponding APM service:
 
-![iot frontend switch ](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/iot-frontend-switch.png)
+![iot frontend switch ](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/iot_frontend_switch.png)
 
 Open a log from `iot-frontend` service by clicking on it.
 
