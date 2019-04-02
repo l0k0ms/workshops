@@ -15,7 +15,7 @@ Create a Grok parser processor to parse your full text logs and transform it int
 #### The full grok rule is:
 
 ```
-rule %{ip:network.client_ip} - - \[%{date("dd/MMM/yyyy HH:mm:ss")}\] "%{word:http.method} %{notSpace:http.url} HTTP\/%{number:http.version}" %{number:http.status_code} %{notSpace:http.referer}
+rule %{ip:network.client.ip} %{notSpace:http.ident:nullIf("-")} %{notSpace:http.auth:nullIf("-")} %{number:duration} \[%{date("yyyy-MM-dd'T'HH:mm:ssZ"):date}\] "%{word:http.method} %{notSpace:http.url}" %{number:http.status_code} %{integer:network.bytes_written} "%{notSpace:http.referrer}" "%{data:http.useragent}"
 ```
 
 | Text                   | Pattern                             |
@@ -24,9 +24,9 @@ rule %{ip:network.client_ip} - - \[%{date("dd/MMM/yyyy HH:mm:ss")}\] "%{word:htt
 | [12/Oct/2018 11:44:58] | \[%{date("dd/MMM/yyyy HH:mm:ss")}\] |
 | GET                    | %{word:http.method}                 |
 | /simulate_sensors      | %{notSpace:http.url}                |
-| HTTP/1.1               | HTTP\/%{number:http.version}        |
 | 200                    | %{number:http.status_code}          |
 | -                      | %{notSpace:http.referer}            |
+| -                      | %{data:http.useragent}              |
 
 ### Category processor
 

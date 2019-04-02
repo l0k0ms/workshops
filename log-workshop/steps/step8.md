@@ -1,6 +1,6 @@
 Most of the time all your logs won't be in JSON format, and if they are their attributes my differ between two log sources.
 
-Let's take the following log emitted by the iot-frontend service:
+Let's take the following log emitted by the `pumps-service` service:
 
 ![pump not parsed](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/pumps_not_parsed_log.png)
 
