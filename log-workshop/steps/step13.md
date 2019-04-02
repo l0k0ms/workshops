@@ -1,13 +1,10 @@
-Execute this command in a new terminal `log_bomb`{{copy}}
-
-This should generate a huge amount of logs.
+Execute this command in a new terminal `log_bomb`{{execute}} This should generate a huge amount of logs within Datadog.
 
 In order to understand what we have, use the pattern view of Datadog and look at all the pattern available:
 
+https://app.datadoghq.com/logs/patterns
 
-Let's now parse those logs in order to manipulate them.
-
-Useful processors could be:
+Create now a pipeline to parse those logs. Useful processors could be:
 
 ### Grok parser
 
@@ -63,6 +60,6 @@ Finally, create an url parser to extract all query parameters from your requeste
 
 ### Final Log
 
-Now all your `iot-frontend` service logs are correctly parsed:
+If you succeed correctly the final result should look like this:
 
 ![log parsed](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/log_parsed.png)

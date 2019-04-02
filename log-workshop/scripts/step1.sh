@@ -30,7 +30,11 @@ echo "alias application_stop='docker-compose stop && docker-compose rm'">> ~/.ba
 
 echo "alias application_reload='application_stop && application_up'">> ~/.bashrc
 
-echo "alias log_bomb='docker run -d -it -f apache_common --rm mingrammer/flog'">> ~/.bashrc
+echo "alias apache_common_logger='docker run -d -it --rm mingrammer/flog -f apache_common'">> ~/.bashrc
+
+echo "alias log_bomb='apache_common_logger'">> ~/.bashrc
+
+echo "alias apache_error_logger='docker run -d -it --rm mingrammer/flog -f apache_error'">> ~/.bashrc
 
 echo "alias new_step='source ~/.bashrc && cd ~/log-workshop"
 
