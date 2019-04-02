@@ -23,23 +23,23 @@
         "text": "steps/step4.md"
       },
       {
-        "title": "Switching between Traces and Logs",
+        "title": "Switching between Metrics and Logs",
         "text": "steps/step5.md"
       },
       {
-        "title": "Switching between Metrics and Logs",
+        "title": "Logging without limit",
         "text": "steps/step6.md"
       },
       {
-        "title": "Logging without limit",
+        "title": "Live tail",
         "text": "steps/step7.md"
       },
       {
-        "title": "Live tail",
+        "title": "Parsing a full text log into JSON",
         "text": "steps/step8.md"
       },
       {
-        "title": "Parsing a full text log into JSON",
+        "title": "Switching between Traces and Logs",
         "text": "steps/step9.md"
       },
       {
@@ -53,6 +53,10 @@
       {
         "title": "Monitoring your logs",
         "text": "steps/step12.md"
+      },
+      {
+        "title": "Getting Further with Patterns and Parsing",
+        "text": "steps/step13.md"
       }
     ],
     "intro": {

@@ -1,32 +1,7 @@
-Now that our logs are correctly labeled we are able to manipulate them during their processing in Datadog.
+Now that we filtered out our Agent logs and all our Debug logs, our explorer view is cleaner but we might still want to consult those logs.
 
-Let's go to the [Pipeline page](https://app.datadoghq.com/logs/pipelines) of Datadog and see what we have:
+It's still possible with the of Datadog. [Live tail page](https://app.datadoghq.com/logs/livetail).
 
-The `source` tag already enabled the `Agent` and `Redis` integration pipeline,
+The live tail page displays all logs after the Pipeline section but before the index filter one. If you enter the following query: service:agent you are able to see the parsed agent log even if they won't be indexed:
 
-Which now automatically parse `Agent` and `Redis` logs:
-
-### Exclusion filter
-
-Let's set up the following Index filters:
-
-![Exclusion filter](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/exclusion_filter.png)
-
-
-### Removing Agent log
-
-In order to clean our log explorer from logs that are not relevant for our use case let's implement an index filter:
-
-![index filter agent log](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/index_filter_agent_log.png)
-
-### Learn more about Logging without limits.
-
-#### Removing Debug log
-
-As a general best practice, we also advise you to add an index filter on your Debug logs:
-
-![removing debug logs](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/removing_debug_logs.png)
-
-Our log explorer view now only contains logs from our containers and no more from the Datadog Agent all logs matching the following query: service:agent are no longer reporting:
-
-![agent filtered out](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/agent_filtered_out.png)
+![Live tail agent](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/live_tail_agent.png)

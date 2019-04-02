@@ -1,10 +1,32 @@
-![installed integration](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/installed_integrations.png)
+Now that our logs are correctly labeled we are able to manipulate them during their processing in Datadog.
 
-Since our containers are correctly labeled, install the [Datadog-Docker](https://app.datadoghq.com/account/settings#integrations/docker) integration and [Datadog-Redis](https://app.datadoghq.com/account/settings#integrations/redis) integration to benefit from out of the box Dashboard:
+Let's go to the [Pipeline page](https://app.datadoghq.com/logs/pipelines) of Datadog and see what we have:
 
-* [Docker Dashboard](https://app.datadoghq.com/screen/integration/52/docker---overview)
-* [Redis Dashboard](https://app.datadoghq.com/screen/integration/15/redis---overview)
+The `source` tag already enabled the `Agent` and `Redis` integration pipeline,
 
-On a any given dashboard you can click on a displayed metric to switch to the corresponding logs:
+Which now automatically parse `Agent` and `Redis` logs:
 
-![metrics switch to logs](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/metrics_switch_to_logs.png)
+### Exclusion filter
+
+Let's set up the following Index filters:
+
+![Exclusion filter](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/exclusion_filter.png)
+
+
+### Removing Agent log
+
+In order to clean our log explorer from logs that are not relevant for our use case let's implement an index filter:
+
+![index filter agent log](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/index_filter_agent_log.png)
+
+### Learn more about Logging without limits.
+
+#### Removing Debug log
+
+As a general best practice, we also advise you to add an index filter on your Debug logs:
+
+![removing debug logs](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/removing_debug_logs.png)
+
+Our log explorer view now only contains logs from our containers and no more from the Datadog Agent all logs matching the following query: service:agent are no longer reporting:
+
+![agent filtered out](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/agent_filtered_out.png)

@@ -20,7 +20,7 @@ services:
   agent:
     (...)
     labels:
-      com.datadoghq.ad.logs: '[{"source": "docker", "service": "agent"}]'
+      com.datadoghq.ad.logs: '[{"source": "agent", "service": "agent"}]'
 
   frontend:
     (...)
