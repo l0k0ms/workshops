@@ -22,7 +22,7 @@ Let's update the label with the following rule:
   frontend:
     (...) 
     labels:
-      com.datadoghq.ad.logs: '[{"source": "iot-frontend", "service": "iot-frontend", "log_processing_rules": [{"type": "multi_line", "name": "log_start_with_ip", "pattern" : "(172.20.0.1|Traceback)"}]}]'
+      com.datadoghq.ad.logs: '[{"source": "iot-frontend", "service": "iot-frontend", "log_processing_rules": [{"type": "multi_line", "name": "log_start_with_ip", "pattern" : "(2019-04|Traceback)"}]}]'
 ```
 
 **Reload your application**: `application_reload`{{execute}}

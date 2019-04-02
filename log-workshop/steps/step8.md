@@ -69,4 +69,4 @@ Note: Don't forget to re-activate your previous pipeline.
 
 Now all your `pumps-service` and `iot-frontend` logs are correctly parsed:
 
-![log parsed](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/log_parsed.png)
+![log parsed pumps](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/log_parsed_pumps.png)

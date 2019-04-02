@@ -24,11 +24,13 @@ echo "export POSTGRES_PASSWORD=postgres" >> ~/.bashrc
 
 echo "alias application_build='POSTGRES_USER=\$POSTGRES_USER POSTGRES_PASSWORD=\$POSTGRES_PASSWORD DD_API_KEY=\$DD_API_KEY docker-compose up --build'">> ~/.bashrc
 
-echo "alias application_up='POSTGRES_USER=\$POSTGRES_USER POSTGRES_PASSWORD=\$POSTGRES_PASSWORD DD_API_KEY=\$DD_API_KEY docker-compose up'">> ~/.bashrc
+echo "alias application_up='POSTGRES_USER=\$POSTGRES_USER POSTGRES_PASSWORD=\$POSTGRES_PASSWORD DD_API_KEY=\$DD_API_KEY docker-compose up -d'">> ~/.bashrc
 
 echo "alias application_stop='docker-compose stop && docker-compose rm'">> ~/.bashrc
 
 echo "alias application_reload='application_stop && application_up'">> ~/.bashrc
+
+echo "alias log_bomb='docker run -d -it -f apache_common --rm mingrammer/flog'">> ~/.bashrc
 
 echo "alias new_step='source ~/.bashrc && cd ~/log-workshop"
 

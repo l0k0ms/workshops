@@ -2,17 +2,18 @@ The service tag now allows us to switch between our log explorer view and the co
 
 ![iot frontend switch ](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/iot_frontend_switch.png)
 
-Open a log from `iot-frontend` service by clicking on it.
+1. Open a log from `iot-frontend` service by clicking on it.
 
-On top of the contextual panel click on the `iot-frontend` Service name.
+2. On top of the contextual panel click on the `iot-frontend` Service name.
 
-You should arrive on this page in Datadog APM:
+    You should arrive on this page in Datadog APM:
 
 ![iot-frontend-service-page](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/iot-frontend_service_page.png)
 
-Open the simulate_sensor resource and then any given trace, when switching to the log tab you should see the corresponding logs:
 
-![logs in trace](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/logs_in_trace.png)
+With the Trace ID we are now able to bind a log to the corresponding trace:
 
-Click on the log to get back to the log explorer view.
+1. Open a log from the `user-api` service.
+2. Select the Trace icon next to the service name to see the associated trace:
 
+![associated trace](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/associated_trace.png)
