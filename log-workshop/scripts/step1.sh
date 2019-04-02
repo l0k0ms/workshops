@@ -30,7 +30,7 @@ echo "alias application_stop='docker-compose stop && docker-compose rm'">> ~/.ba
 
 echo "alias application_reload='application_stop && application_up'">> ~/.bashrc
 
-echo "alias log_bomb='docker run -d --label com.datadoghq.ad.logs:='[{\"source\": \"log_bomb\", \"service\": \"apache\"}]' -it --rm mingrammer/flog -f apache_common -l'">> ~/.bashrc
+echo "alias log_bomb='docker run -d --label com.datadoghq.ad.logs:='\"'\"'[{\"source\": \"log_bomb\", \"service\": \"apache\"}]'\"'\"' -it --rm mingrammer/flog -f apache_common -l'">> ~/.bashrc
 
 echo "alias new_step='source ~/.bashrc && cd ~/log-workshop"
 
