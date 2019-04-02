@@ -12,5 +12,7 @@ Todays objective are to see how to:
 
 * Collect logs from a pre-existing application
 * Enable Datadog OOTB Processing capabilities.
+* Parse Logs in order to bind them to APM data and make it easier to analyse them.
+* Create monitors upon your Log Data.
 
 [Kirk Kaiser](https://twitter.com/burningion) has worked hard to make this workshop as helpful possible, but if you see something that could be improved, please feel free to create a Github issue on the repository, or reach out via the [Datadog public Slack](https://chat.datadoghq.com/).
