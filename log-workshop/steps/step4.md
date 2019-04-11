@@ -25,17 +25,17 @@ services:
   frontend:
     (...)
     labels:
-      com.datadoghq.ad.logs: '[{"source": "iot-frontend", "service": "iot-frontend"}]'
+      com.datadoghq.ad.logs: '[{"source": "python", "service": "iot-frontend"}]'
 
   noder:
     (...)
     labels:
-      com.datadoghq.ad.logs: '[{"source": "users-api", "service": "users-api"}]'
+      com.datadoghq.ad.logs: '[{"source": "nodejs", "service": "users-api"}]'
 
   pumps:
     (...)
     labels:
-      com.datadoghq.ad.logs: '[{"source": "pumps-service", "service": "pumps-service"}]'
+      com.datadoghq.ad.logs: '[{"source": "python", "service": "pumps-service"}]'
 
   redis:
     (...)
@@ -45,7 +45,7 @@ services:
   sensors:
     (...)
     labels:
-      com.datadoghq.ad.logs: '[{"source": "sensors", "service": "sensors-api"}]'
+      com.datadoghq.ad.logs: '[{"source": "python", "service": "sensors-api"}]'
 
   db:
     (...)
