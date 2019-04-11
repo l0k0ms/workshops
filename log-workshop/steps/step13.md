@@ -4,7 +4,13 @@ In order to understand what we have, use the pattern view of Datadog and look at
 
 https://app.datadoghq.com/logs/patterns
 
-Create now a pipeline to parse those logs. Useful processors could be:
+Let's now Ccreate a pipeline to parse those logs.
+
+### Create a dedicated Pipeline
+
+Let's start to go to the pipeline section again and create a new pipeline to only parse those logs:
+
+![Create a pipeline](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/create_a_pipeline.png)
 
 ### Grok parser
 
@@ -27,6 +33,8 @@ rule %{ip:network.client.ip} %{notSpace:http.ident:nullIf("-")} %{notSpace:http.
 | 200                    | %{number:http.status_code}          |
 | -                      | %{notSpace:http.referer}            |
 | -                      | %{data:http.useragent}              |
+
+The previous grok rules implements [Datadog naming convention](https://docs.datadoghq.com/logs/processing/attributes_naming_convention/).
 
 ### Category processor
 
@@ -63,3 +71,8 @@ Finally, create an url parser to extract all query parameters from your requeste
 If you succeed correctly the final result should look like this:
 
 ![log parsed](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/log_parsed.png)
+
+
+### Getting further
+
+Add the right facets and measures and try to display the p95 percentiles of bytes sent per URL.

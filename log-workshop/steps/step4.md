@@ -30,7 +30,7 @@ services:
   noder:
     (...)
     labels:
-      com.datadoghq.ad.logs: '[{"source": "nodejs", "service": "users-api"}]'
+      com.datadoghq.ad.logs: '[{"source": "user-api", "service": "users-api"}]'
 
   pumps:
     (...)
