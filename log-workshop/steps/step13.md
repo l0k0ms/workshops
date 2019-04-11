@@ -4,7 +4,7 @@ In order to understand what we have, use the pattern view of Datadog and look at
 
 https://app.datadoghq.com/logs/patterns
 
-Let's now Ccreate a pipeline to parse those logs.
+Let's now create a pipeline to parse those logs.
 
 ### Create a dedicated Pipeline
 
