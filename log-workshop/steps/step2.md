@@ -1,6 +1,6 @@
 1. In order to get started, launch the application by clicking on the `application_build`{{execute}} command.
 
-2. After seeing the logs flowing in your terminal click on `APPLICATION DASHBOARD` tab of the terminal in oder to see the application running or access this link:
+2. After seeing the logs flowing in your terminal click on `APPLICATION DASHBOARD` tab of the terminal in order to see the application running or access this link:
 
     https://[[HOST_SUBDOMAIN]]-5000-[[KATACODA_HOST]].environments.katacoda.com/
 
