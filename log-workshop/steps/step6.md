@@ -13,7 +13,7 @@ Let's set up the following Index filters:
 ![Exclusion filter](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/exclusion_filter.png)
 
 
-### Removing Agent log
+### Removing Agent logs
 
 In order to clean our log explorer from logs that are not relevant for our use case let's implement an index filter:
 
