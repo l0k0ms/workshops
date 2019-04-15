@@ -1,12 +1,12 @@
-Logs are now showing in your log explorer view. You can see that Datadog assign a service name to your logs based upon the docker image name that emitted it.
+Logs should now be showing in your log explorer view. You can see that Datadog assigns a service name to your logs based upon the docker image name that emitted it.
 
-It works fine with know images, but with your custom application name, the service name doesn't match the APM services.
+It works automatically with known images, but if you have a custom application name, the service name may not match the services in APM.
 
 In order to gain more visibility about which container emitted which logs and in order to bind your logs with the previously implemented APM and metrics, let's use Labels to specify the `source` and the `service` tags for each container logs.
 
 **The source tag is key to enable the integration pipeline**
 
-Datadog has a range of Log supported integrations. In order to enable the Log integration pipelines in Datadog, pass the source name as a value for the source attribute with a docker label.
+Datadog has a wide range of log integrations. In order to enable the Log integration pipelines in Datadog, pass the source name as a value for the source attribute with a docker label.
 
 **The service tag is key for binding metrics traces and logs.**
 
