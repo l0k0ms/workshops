@@ -1,4 +1,4 @@
-Now that we filtered out our Agent logs and all our Debug logs, our explorer view is cleaner but we might still want to consult those logs.
+Now that we have filtered out our Agent logs and all our Debug logs, our explorer view is cleaner but we might still want to consult those logs.
 
 It's still possible with the of Datadog. [Live tail page](https://app.datadoghq.com/logs/livetail).
 
