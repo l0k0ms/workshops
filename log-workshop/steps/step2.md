@@ -14,6 +14,6 @@
     * [In the APM Services Map view](https://app.datadoghq.com/service/map?env=workshop)
     * [In the container map view](https://app.datadoghq.com/infrastructure/map?fillby=avg%3Aprocess.stat.container.io.wbps&sizeby=avg%3Anometric&groupby=short_image&nameby=name&nometrichosts=false&tvMode=false&nogrouphosts=true&palette=YlOrRd&paletteflip=false&node_type=container)
 
-Tab back over to your terminal, and look over the container logs, go to your https://app.datadoghq.com/logs and notice that there is no log yet...
+Tab back over to your terminal, and look over the container logs, go to your https://app.datadoghq.com/logs and notice that there are no logs displayed yet.
 
-Our first mission should you choose to accept it, configure the Datadog Agent to start forwarding your logs into your Datadog Application.
+Your first mission should you choose to accept it, configure the Datadog Agent to start forwarding your logs into your Datadog Application.
