@@ -1,4 +1,4 @@
-Now that our logs are correctly labeled we are able to manipulate them during their processing in Datadog.
+Now that our logs are correctly labeled we are able to manipulate them during processing in Datadog.
 
 Let's go to the [Pipeline page](https://app.datadoghq.com/logs/pipelines) of Datadog and see what we have:
 
