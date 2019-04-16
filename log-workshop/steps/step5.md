@@ -1,6 +1,6 @@
 ![installed integration](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/installed_integrations.png)
 
-Since our containers are correctly labeled, install the [Datadog-Docker](https://app.datadoghq.com/account/settings#integrations/docker) integration and [Datadog-Redis](https://app.datadoghq.com/account/settings#integrations/redis) integration to benefit from out of the box Dashboard:
+Since our containers are correctly labeled, the [Datadog-Docker](https://app.datadoghq.com/account/settings#integrations/docker) integration and [Datadog-Redis](https://app.datadoghq.com/account/settings#integrations/redis) integration should be already installed, and their corresponding dashboard should be already displaying some data:
 
 * [Docker Dashboard](https://app.datadoghq.com/screen/integration/52/docker---overview)
 * [Redis Dashboard](https://app.datadoghq.com/screen/integration/15/redis---overview)

@@ -26,7 +26,7 @@ echo "alias application_build='POSTGRES_USER=\$POSTGRES_USER POSTGRES_PASSWORD=\
 
 echo "alias application_up='POSTGRES_USER=\$POSTGRES_USER POSTGRES_PASSWORD=\$POSTGRES_PASSWORD DD_API_KEY=\$DD_API_KEY docker-compose up -d'">> ~/.bashrc
 
-echo "alias application_stop='docker-compose stop && docker-compose rm'">> ~/.bashrc
+echo "alias application_stop='docker-compose stop && docker-compose rm -f'">> ~/.bashrc
 
 echo "alias application_reload='application_stop && application_up'">> ~/.bashrc
 
@@ -34,4 +34,4 @@ echo "alias log_bomb='docker run -d --label com.datadoghq.ad.logs:='\"'\"'[{\"so
 
 echo "alias new_step='source ~/.bashrc && cd ~/log-workshop"
 
-echo "Configuration is now over" | wall -n
+echo "Configuration is now over, press enter in the terminal" | wall -n
