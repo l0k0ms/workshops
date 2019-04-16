@@ -20,7 +20,7 @@ Let's update the label with the following rule:
 
 ```
   frontend:
-    (...) 
+    (...)
     labels:
       com.datadoghq.ad.logs: '[{"source": "iot-frontend", "service": "iot-frontend", "log_processing_rules": [{"type": "multi_line", "name": "log_start_with_ip", "pattern" : "(2019-04|Traceback)"}]}]'
 ```

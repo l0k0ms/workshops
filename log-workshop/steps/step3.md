@@ -2,7 +2,7 @@
 
 There are no logs listed yet in your Log Explorer page, because the Datadog Agent is not configured to gather them, to change this let's follow these steps:
 
-1. Add the following configuration lines in your docker-compose.yml file at the root of the workshop directory:
+1. Add the following configuration lines in your `docker-compose.yml` file at the root of the workshop directory:
 
 ```
  datadog:
