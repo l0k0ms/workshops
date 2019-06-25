@@ -12,53 +12,73 @@
         "verify": "scripts/step1_verify.sh"
       },
       {
-        "title": "Getting Started",
+        "title": "Collecting your first logs",
         "text": "steps/step2.md",
         "code": "scripts/step2.sh"
       },
       {
-        "title": "Gathering our first logs",
+        "title": "Launching the application",
         "text": "steps/step3.md"
       },
       {
-        "title": "Using Label to correctly tag logs",
+        "title": "Explore data collected in Datadog",
         "text": "steps/step4.md"
       },
       {
-        "title": "Switching between Metrics and Logs",
+        "title": "Log Explorer view",
         "text": "steps/step5.md"
       },
       {
-        "title": "Logging without limit",
+        "title": "Connect Logs and Traces",
         "text": "steps/step6.md"
       },
       {
-        "title": "Live tail",
+        "title": "Connect Logs and Metrics",
         "text": "steps/step7.md"
       },
       {
-        "title": "Interacting with an Integration Pipeline",
+        "title": "Switch between Traces and Logs",
         "text": "steps/step8.md"
       },
       {
-        "title": "Switching between Traces and Logs",
+        "title": "Integration Pipelines",
         "text": "steps/step9.md"
       },
       {
-        "title": "Adding attribute as a Facet",
+        "title": "Logging without Limits",
         "text": "steps/step10.md"
       },
       {
-        "title": "Multi-line logs",
+        "title": "Live Tail",
         "text": "steps/step11.md"
       },
       {
-        "title": "Monitoring your logs",
+        "title": "Parsing enhancement",
         "text": "steps/step12.md"
       },
       {
-        "title": "Getting Further with Patterns and Parsing",
+        "title": "Facets",
         "text": "steps/step13.md"
+      },
+      {
+        "title": "Facets as filters",
+        "text": "steps/step14.md"
+      },
+      {
+        "title": "Facets in Analytics",
+        "text": "steps/step15.md"
+      },
+      {
+        "title": "Log monitors",
+        "text": "steps/step16.md"
+      },
+      {
+        "title": "Multi-line logs",
+        "text": "steps/step17.md"
+      },
+      {
+        "title": "Patterns",
+        "text": "steps/step18.md"
       }
     ],
     "intro": {

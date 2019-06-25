@@ -1,6 +1,6 @@
 ![dd_logo](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/dd_logo.png)
 
-Welcome to Logging with Datadog Log Management workshop. 
+Welcome to Logging with Datadog Log Management workshop.
 
 This Katacoda course contains a "dummy" Water System microservices project, a single page web application with microservices, already instrumented and analyzed using Datadog's APM and infrastructure products.
 

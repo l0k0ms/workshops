@@ -1,27 +1,33 @@
-Let's build a monitor upon our logs that warns us if an error occurs and that send us the corresponding logs:
+Let's look closer into our logs.
 
-Enter the search you want to monitor logs from in your Log explorer search bar:
 
-![monitor query](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/monitor_query.png)
+### Redis logs
 
-Click on the export to monitor button in the upper right corner of the Log explorer page:
+It seems that our Redis logs are not correctly parsed:
 
-![export to monitor](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/export_to_monitor.png)
+![Redis logs not parsed](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/redis_log_not_parsed.png)
 
-Set up a Warning and Alert threshold for your Log monitor
+Let's go the the [Log configuration page](https://app.datadoghq.com/logs/pipelines) and see what happened:
 
-Set the monitor title and template the notification sent.
+1. Open the Redis Pipeline
+2. Open the `Grok Parser: Parsing Redis logs` processor.
 
-![monitor configuration](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/monitor_configuration.png)
+It seems that the parser is not matching our logs, let's find out why:
 
-### Save your monitor.
+![Parser not parsing](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/parser_not_parsing.png)
 
-Check that your monitor is correctly saved in your manage monitor page.
+Open the *Advanced Settings* section and look at the `_date` Token:
 
-![manage monitor page](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/manage_monitor_page.png)
+![advanced setting](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/advanced_rules.png)
 
-### Monitor notification
+The date format is wrong.
 
-If you entered your email address in the notification, you should receive an email with a snippet of 10 logs matching your query:
+To fix this pipeline, let's start by cloning it:
 
-![mail notification](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/mail_notification.png)
+![duplicate pipeline](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/duplicate_pipeline.png)
+
+Then re-open the processor, and fix the `_date` token to `_date %{date("dd MMM yyyy HH:mm:ss.SSS"):date}`
+
+If you enter a log in the `Test against a sample` section you should see it parsed:
+
+![Parsing redis logs](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/parsing_redis_logs.png)

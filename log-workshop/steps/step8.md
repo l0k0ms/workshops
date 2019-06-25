@@ -1,33 +1,19 @@
-Let's look closer into our logs.
+The service tag now allows us to switch between our log explorer view and the corresponding APM service:
+
+![iot frontend switch ](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/iot_frontend_switch.png)
+
+1. Open a log from `iot-frontend` service by clicking on it.
+
+2. On top of the contextual panel click on the `iot-frontend` Service name.
+
+    You should arrive on this page in Datadog APM:
+
+![iot-frontend-service-page](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/iot-frontend_service_page.png)
 
 
-### Redis logs
+With the Trace ID we are now able to bind a log to the corresponding trace:
 
-It seems that our Redis logs are not correctly parsed:
+1. Open a log from the `user-api` service.
+2. Select the Trace icon next to the service name to see the associated trace:
 
-![Redis logs not parsed](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/redis_log_not_parsed.png)
-
-Let's go the the [Log configuration page](https://app.datadoghq.com/logs/pipelines) and see what happened:
-
-1. Open the Redis Pipeline
-2. Open the `Grok Parser: Parsing Redis logs` processor.
-
-It seems that the parser is not matching our logs, let's find out why:
-
-![Parser not parsing](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/parser_not_parsing.png)
-
-Open the *Advanced Settings* section and look at the `_date` Token:
-
-![advanced setting](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/advanced_rules.png)
-
-The date format is wrong.
-
-To fix this pipeline, let's start by cloning it:
-
-![duplicate pipeline](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/duplicate_pipeline.png)
-
-Then re-open the processor, and fix the `_date` token to `_date %{date("dd MMM yyyy HH:mm:ss.SSS"):date}`
-
-If you enter a log in the `Test against a sample` section you should see it parsed:
-
-![Parsing redis logs](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/parsing_redis_logs.png)
+![associated trace](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/associated_trace.png)

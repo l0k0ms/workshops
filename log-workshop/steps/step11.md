@@ -1,32 +1,7 @@
-Let's kill a container and see what happens:
+Now that we have filtered out our Agent logs and all our Debug logs, our explorer view is cleaner but we might still want to consult those logs.
 
-Check the list of running container with `docker ps`{{execute}}
+It's still possible with the of Datadog. [Live tail page](https://app.datadoghq.com/logs/livetail).
 
-Kill the container named `log-workshop-*_pumps` with:
+The live tail page displays all logs after the Pipeline section but before the index filter one. If you enter the following query: service:agent you are able to see the parsed agent log even if they won't be indexed:
 
-`docker kill <CONTAINER_ID>`{{copy}}
-
-When trying to add a new pump in the application, nothing should happen and Traceback should appear in the log explorer, but they are not parsed well and the \n inside of them is messing with the log wrapping:
-
-![traceback not wrapped](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/traceback_not_wrapped.png)
-
-To compensate for this, two options are available:
-
-1. Log in JSON format in order to always have the Stacktrace properly wrapped (Recommended)
-
-2. Update the container label in order to specify to the Datadog Agent the pattern for a new log.
-
-Let's update the label with the following rule:
-
-```
-  frontend:
-    (...)
-    labels:
-      com.datadoghq.ad.logs: '[{"source": "iot-frontend", "service": "iot-frontend", "log_processing_rules": [{"type": "multi_line", "name": "log_start_with_ip", "pattern" : "(2019-04|Traceback)"}]}]'
-```
-
-**Reload your application**: `application_reload`{{execute}}
-
-Stacktraces from the `iot-frontend` service are now properly wrapped in the Log explorer view:
-
-![traceback properly wrapped](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/traceback_properly_wrapped.png)
+![Live tail agent](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/live_tail_agent.png)

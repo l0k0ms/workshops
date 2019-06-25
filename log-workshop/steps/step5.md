@@ -1,10 +1,3 @@
-![installed integration](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/installed_integrations.png)
+Logs should now be showing in your [log explorer view](https://app.datadoghq.com/logs). You can see that Datadog assigns a service name to your logs based upon the docker image name that emitted it.
 
-Since our containers are correctly labeled, the [Datadog-Docker](https://app.datadoghq.com/account/settings#integrations/docker) integration and [Datadog-Redis](https://app.datadoghq.com/account/settings#integrations/redis) integration should be already installed, and their corresponding dashboard should be already displaying some data:
-
-* [Docker Dashboard](https://app.datadoghq.com/screen/integration/52/docker---overview)
-* [Redis Dashboard](https://app.datadoghq.com/screen/integration/15/redis---overview)
-
-On a any given dashboard you can click on a displayed metric to switch to the corresponding logs:
-
-![metrics switch to logs](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/metrics_switch_to_logs.png)
+It works automatically with known images, but if you have a custom application name, the service name may not match the services in APM.

@@ -1,31 +1,57 @@
-Now that our logs are correctly labeled we are able to manipulate them during processing in Datadog.
+In order to gain more visibility about which container emitted which logs and in order to bind your logs with the previously implemented APM and metrics, let's use Labels to specify the `source` and the `service` tags for each container logs.
 
-Let's go to the [Pipeline page](https://app.datadoghq.com/logs/pipelines) of Datadog and see what we have:
+**The source tag is key to enable the integration pipeline**
 
-The `source` tag already enabled the `Agent`, `Redis`, and `Python` integration pipeline,
+Datadog has a wide range of log integrations. In order to enable the Log integration pipelines in Datadog, pass the source name as a value for the source attribute with a docker label.
 
-Which now automatically parse `Agent`, `Redis`, and `Python` logs.
+**The service tag is key for binding metrics traces and logs.**
 
-## Exclusion filter
+The application is already instrumented for APM. Let's add the service tags to the iot-frontend, noder, pumps, redis, sensor, db and adminer containers in order to be able to bind their traces and their logs together.
 
-Let's set up the following Index filters in order to control which logs get indexed.
+Update your `docker-compose.yml` file at the root directory of the workshop with the following labels:
 
-![Exclusion filter](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/exclusion_filter.png)
+```
+version: '3'
+services:
+  agent:
+    (...)
+    labels:
+      com.datadoghq.ad.logs: '[{"source": "agent", "service": "agent"}]'
 
-Go to your [Datadog Index page](https://app.datadoghq.com/logs/pipelines/indexes) to create your first filter.
+  frontend:
+    (...)
+    labels:
+      com.datadoghq.ad.logs: '[{"source": "python", "service": "iot-frontend"}]'
 
-### Removing Agent logs
+  noder:
+    (...)
+    labels:
+      com.datadoghq.ad.logs: '[{"source": "user-api", "service": "users-api"}]'
 
-In order to clean our log explorer from logs that are not relevant for our use case let's implement an index filter:
+  pumps:
+    (...)
+    labels:
+      com.datadoghq.ad.logs: '[{"source": "python", "service": "pumps-service"}]'
 
-![index filter agent log](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/index_filter_agent_log.png)
+  redis:
+    (...)
+    labels:
+      com.datadoghq.ad.logs: '[{"source": "redis", "service": "redis"}]'
 
-#### Removing Debug log
+  sensors:
+    (...)
+    labels:
+      com.datadoghq.ad.logs: '[{"source": "python", "service": "sensors-api"}]'
 
-As a general best practice, we also advise you to add an index filter on your Debug logs:
+  db:
+    (...)
+    labels:
+      com.datadoghq.ad.logs: '[{"source": "postgresql", "service": "postgres"}]'
 
-![removing debug logs](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/removing_debug_logs.png)
+```
 
-Our log explorer view now only contains logs from our containers and no more from the Datadog Agent all logs matching the following query: service:agent are no longer reporting:
+**Reload your application**: `application_reload`{{execute}} And go generate some actions:
 
-![agent filtered out](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/agent_filtered_out.png)
+https://[[HOST_SUBDOMAIN]]-5000-[[KATACODA_HOST]].environments.katacoda.com/
+
+Finally, go to your Log explorer view to see the new service tags flowing in:

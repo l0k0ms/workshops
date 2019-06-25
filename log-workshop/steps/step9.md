@@ -1,19 +1,7 @@
-The service tag now allows us to switch between our log explorer view and the corresponding APM service:
+Now that our logs are correctly labeled we are able to manipulate them during processing in Datadog.
 
-![iot frontend switch ](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/iot_frontend_switch.png)
+Let's go to the [Pipeline page](https://app.datadoghq.com/logs/pipelines) of Datadog and see what we have:
 
-1. Open a log from `iot-frontend` service by clicking on it.
+The `source` tag already enabled the `Agent`, `Redis`, and `Python` integration pipeline,
 
-2. On top of the contextual panel click on the `iot-frontend` Service name.
-
-    You should arrive on this page in Datadog APM:
-
-![iot-frontend-service-page](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/iot-frontend_service_page.png)
-
-
-With the Trace ID we are now able to bind a log to the corresponding trace:
-
-1. Open a log from the `user-api` service.
-2. Select the Trace icon next to the service name to see the associated trace:
-
-![associated trace](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/associated_trace.png)
+Which now automatically parse `Agent`, `Redis`, and `Python` logs.

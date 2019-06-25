@@ -1,15 +1,23 @@
-To add an attribute as a Facet and start using it in your log analytics, click on it:
+## Exclusion filter
 
-![create facet](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/create_facet.png)
+Let's set up the following Index filters in order to control which logs get indexed.
 
-Don't forget to assign a group to your facet in order to avoid polluting your Log explorer view:
+![Exclusion filter](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/exclusion_filter.png)
 
-![create facet group](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/creating_facet_group.png)
+Go to your [Datadog Index page](https://app.datadoghq.com/logs/pipelines/indexes) to create your first filter.
 
-You can then use this facet to filter your log explorer view:
+### Removing Agent logs
 
-![using facet as filter](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/using_facet_as_filter.png)
+In order to clean our log explorer from logs that are not relevant for our use case let's implement an index filter:
 
-Or in your Log analytics:
+![index filter agent log](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/index_filter_agent_log.png)
 
-![log analytics](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/log_analytics.png)
+#### Removing Debug log
+
+As a general best practice, we also advise you to add an index filter on your Debug logs:
+
+![removing debug logs](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/removing_debug_logs.png)
+
+Our log explorer view now only contains logs from our containers and no more from the Datadog Agent all logs matching the following query: service:agent are no longer reporting:
+
+![agent filtered out](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/agent_filtered_out.png)

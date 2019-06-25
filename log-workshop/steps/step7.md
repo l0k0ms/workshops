@@ -1,7 +1,10 @@
-Now that we have filtered out our Agent logs and all our Debug logs, our explorer view is cleaner but we might still want to consult those logs.
+![installed integration](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/installed_integrations.png)
 
-It's still possible with the of Datadog. [Live tail page](https://app.datadoghq.com/logs/livetail).
+Since our containers are correctly labeled, the [Datadog-Docker](https://app.datadoghq.com/account/settings#integrations/docker) integration and [Datadog-Redis](https://app.datadoghq.com/account/settings#integrations/redis) integration should be already installed, and their corresponding dashboard should be already displaying some data:
 
-The live tail page displays all logs after the Pipeline section but before the index filter one. If you enter the following query: service:agent you are able to see the parsed agent log even if they won't be indexed:
+* [Docker Dashboard](https://app.datadoghq.com/screen/integration/52/docker---overview)
+* [Redis Dashboard](https://app.datadoghq.com/screen/integration/15/redis---overview)
 
-![Live tail agent](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/live_tail_agent.png)
+On a any given dashboard you can click on a displayed metric to switch to the corresponding logs:
+
+![metrics switch to logs](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/metrics_switch_to_logs.png)
