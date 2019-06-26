@@ -1,5 +1,3 @@
-![empty log explorer](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/empty_log_explorer.png)
-
 There are no logs listed yet in your Log Explorer page, because the Datadog Agent is not configured to gather them, to change this let's follow these steps:
 
 First, Add the following configuration lines in your `docker-compose.yml` file at the root of the workshop directory:

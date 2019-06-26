@@ -1,33 +1,33 @@
 Let's look closer into our logs.
 
+![original log](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/original_log.png)
 
-### Redis logs
+The python encapsulation is extracted but left as is in our log message.
 
-It seems that our Redis logs are not correctly parsed:
+Let's remove all duplicated information in order to keep in our message only the core content of our log:
 
-![Redis logs not parsed](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/redis_log_not_parsed.png)
+Go the the [Log configuration page](https://app.datadoghq.com/logs/pipelines) and start by cloning our python pipeline
 
-Let's go the the [Log configuration page](https://app.datadoghq.com/logs/pipelines) and see what happened:
+![Duplicating pipeline](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/duplicating_pipeline.png)
 
-1. Open the Redis Pipeline
-2. Open the `Grok Parser: Parsing Redis logs` processor.
+Now that we can edit our pipeline:
 
-It seems that the parser is not matching our logs, let's find out why:
+1. Open the processor: `Grok Parser: Parsing python default format`
+2. Comment the `python_format` rule.
+3. Create a new grok parsing rule in order to properly extract the message:
+    ```
+    python_format_workshop (%{_python_prefix}|%{_datadog_prefix})\s+%{data:tmp_msg}
+    ```
+4. Save your new processor
 
-![Parser not parsing](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/parser_not_parsing.png)
+The final Grok parser should look like this:
 
-Open the *Advanced Settings* section and look at the `_date` Token:
+![grok_parser_edited](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/grok_parser_edited.png)
 
-![advanced setting](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/advanced_rules.png)
+In order to finish the new processing strategy, create a new message remaper processor:
 
-The date format is wrong.
+![message_remapper](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/message_remapper.png)
 
-To fix this pipeline, let's start by cloning it:
+If you followed the instructions above, your Redis logs should look like this now:
 
-![duplicate pipeline](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/duplicate_pipeline.png)
-
-Then re-open the processor, and fix the `_date` token to `_date %{date("dd MMM yyyy HH:mm:ss.SSS"):date}`
-
-If you enter a log in the `Test against a sample` section you should see it parsed:
-
-![Parsing redis logs](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/parsing_redis_logs.png)
+![logs_properly_processed](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/logs_properly_processed.png)

@@ -11,13 +11,3 @@ Go to your [Datadog Index page](https://app.datadoghq.com/logs/pipelines/indexes
 In order to clean our log explorer from logs that are not relevant for our use case let's implement an index filter:
 
 ![index filter agent log](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/index_filter_agent_log.png)
-
-#### Removing Debug log
-
-As a general best practice, we also advise you to add an index filter on your Debug logs:
-
-![removing debug logs](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/removing_debug_logs.png)
-
-Our log explorer view now only contains logs from our containers and no more from the Datadog Agent all logs matching the following query: service:agent are no longer reporting:
-
-![agent filtered out](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/agent_filtered_out.png)

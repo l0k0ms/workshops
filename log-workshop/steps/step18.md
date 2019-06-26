@@ -1,4 +1,6 @@
-Execute this command in a new terminal `log_bomb`{{execute}} This should generate a huge amount of logs within Datadog.
+Let's reload the application one more time: `application_reload`{{execute}}
+
+Now execute this command `log_bomb`{{execute}} This should generate a huge amount of logs within Datadog.
 
 In order to understand what we have, use the pattern view of Datadog and look at all the pattern available:
 
@@ -21,18 +23,16 @@ Create a Grok parser processor to parse your full text logs and transform it int
 #### The full grok rule is:
 
 ```
-rule %{ip:network.client.ip} %{notSpace:http.ident:nullIf("-")} %{notSpace:http.auth:nullIf("-")} %{number:duration} \[%{date("yyyy-MM-dd'T'HH:mm:ssZ"):date}\] "%{word:http.method} %{notSpace:http.url}" %{number:http.status_code} %{integer:network.bytes_written} "%{notSpace:http.referrer}" "%{data:http.useragent}"
+rule %{ip:network.client.ip} %{notSpace:http.ident:nullIf("-")} %{notSpace:http.auth:nullIf("-")} \[%{date("dd/MM/yyyy:HH:mm:ss Z"):date}\] "%{word:http.method} %{notSpace:http.url}" %{number:http.status_code} %{integer:network.bytes_written}
 ```
 
-| Text                   | Pattern                             |
-| -----                  | ----                                |
-| 172.20.0.1             | %{ip:network.client_ip}             |
-| [12/Oct/2018 11:44:58] | \[%{date("dd/MMM/yyyy HH:mm:ss")}\] |
-| GET                    | %{word:http.method}                 |
-| /simulate_sensors      | %{notSpace:http.url}                |
-| 200                    | %{number:http.status_code}          |
-| -                      | %{notSpace:http.referer}            |
-| -                      | %{data:http.useragent}              |
+| Text                        | Pattern                                   |
+| -----                       | ----                                      |
+| 172.20.0.1                  | %{ip:network.client_ip}                   |
+| [26/06/2019:09:22:54 +0000] | \[%{date("dd/MM/yyyy:HH:mm:ss Z"):date}\] |
+| GET                         | %{word:http.method}                       |
+| /simulate_sensors           | %{notSpace:http.url}                      |
+| 200                         | %{number:http.status_code}                |
 
 The previous grok rules implements [Datadog naming convention](https://docs.datadoghq.com/logs/processing/attributes_naming_convention/).
 
@@ -75,4 +75,4 @@ If you succeed correctly the final result should look like this:
 
 ### Getting further
 
-Add the right facets and measures and try to display the p95 percentiles of bytes sent per URL.
+Add the facets: `http.status_code`, `http.url_details.path`, and `http.method` in order to benefit from specific UI enhancements.

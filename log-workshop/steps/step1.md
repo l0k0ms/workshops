@@ -6,4 +6,12 @@ Once done, run the following command into your terminal by replacing `<DATADOG_A
 
 `echo "export DD_API_KEY=<DATADOG_API_KEY>" >> ~/.bashrc`{{copy}}
 
-Finally enable Datadog Log management by going to the [Logs section](https://app.datadoghq.com/logs) and click **Getting Started** then **Start Trial**
+Finally enable Datadog Log management:
+
+![empty log explorer](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/empty_log_explorer.png)
+
+1. Go in [Datadog Logs section](https://app.datadoghq.com/logs)
+2. Click **Getting Started**
+3. Select **Start Trial**
+
+![start_trial](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/start_trial.png)

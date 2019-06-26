@@ -13,7 +13,7 @@ The service tag now allows us to switch between our log explorer view and the co
 
 With the Trace ID we are now able to bind a log to the corresponding trace:
 
-1. Open a log from the `user-api` service.
+1. Open a log from the `iot-frontend` service.
 2. Select the Trace icon next to the service name to see the associated trace:
 
 ![associated trace](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/associated_trace.png)
