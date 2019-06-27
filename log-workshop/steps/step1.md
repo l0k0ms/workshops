@@ -13,5 +13,3 @@ Finally enable Datadog Log management:
 1. Go in [Datadog Logs section](https://app.datadoghq.com/logs)
 2. Click **Getting Started**
 3. Select **Start Trial**
-
-![start_trial](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/start_trial.png)
