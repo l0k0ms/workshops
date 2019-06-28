@@ -2,7 +2,7 @@ Let's reload the application one more time: `application_reload`{{execute}}
 
 Now execute this command `log_bomb`{{execute}} This should generate a huge amount of logs within Datadog.
 
-In order to understand what we have, use the pattern view of Datadog and look at all the pattern available:
+To understand what we have, use the pattern view of Datadog, and look at all the patterns available:
 
 https://app.datadoghq.com/logs/patterns
 
@@ -10,13 +10,13 @@ Let's now create a pipeline to parse those logs.
 
 ### Create a dedicated Pipeline
 
-Let's start to go to the pipeline section again and create a new pipeline to only parse those logs:
+Let's go to the pipeline section again and create a new pipeline to only parse these logs:
 
 ![Create a pipeline](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/create_a_pipeline.png)
 
 ### Grok parser
 
-Create a Grok parser processor to parse your full text logs and transform it into a JSON.
+Create a Grok parser processor to parse your full-text logs and transform it into a JSON.
 
 ![Grok parser](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/grok_parser.png)
 
@@ -40,7 +40,7 @@ The previous grok rules implements [Datadog naming convention](https://docs.data
 
 An access log by definition doesn't have any status attached, but there is a way to assign your log a status depending on the value of the http.status_code attribute. For this create a category processor:
 
-And add 4 categories to it:
+And add four categories to it:
 
 ![create a category](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/create_a_category.png)
 
@@ -62,13 +62,13 @@ Create a status remapper processor to take the category we just created and rema
 
 ### Url Parser
 
-Finally, create an url parser to extract all query parameters from your requested URL:
+Finally, create an URL parser to extract all query parameters from your requested URL:
 
 ![url parser](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/url_parser.png)
 
 ### Final Log
 
-If you succeed correctly the final result should look like this:
+If you succeed, the final result should look like this:
 
 ![log parsed](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/log_parsed.png)
 
