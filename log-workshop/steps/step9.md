@@ -1,11 +1,27 @@
-Now that our logs are correctly labeled we are able to manipulate them during processing in Datadog.
+Let's build a monitor upon our logs that warns us if an error occurs and that send us the corresponding logs:
 
-Let's go to the [Pipeline page](https://app.datadoghq.com/logs/pipelines) of Datadog and see what we have:
+Enter the search you want to monitor logs from in your Log explorer search bar:
 
-![pipeline_page](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/pipeline_page.png)
+![monitor query](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/monitor_query.png)
 
-The `source` tag already enabled the `Agent`, `Redis`, and `Python` integration pipeline,
+Click on the export to monitor button in the upper right corner of the Log explorer page:
 
-Which now automatically parse `Agent`, `Redis`, and `Python` logs:
+![export to monitor](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/export_to_monitor.png)
 
-![redis_log](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/redis_log.png)
+Set up a Warning and Alert threshold for your Log monitor
+
+Set the monitor title and template the notification sent.
+
+![monitor configuration](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/monitor_configuration.png)
+
+### Save your monitor.
+
+Check that your monitor is correctly saved in your manage monitor page.
+
+![manage monitor page](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/manage_monitor_page.png)
+
+### Monitor notification
+
+If you entered your email address in the notification, you should receive an email with a snippet of 10 logs matching your query:
+
+![mail notification](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/mail_notification.png)

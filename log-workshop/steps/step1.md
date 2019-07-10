@@ -8,7 +8,7 @@ Once done, run the following command into your terminal by replacing `<DATADOG_A
 
 Finally enable Datadog Log management:
 
-![empty log explorer](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/empty_log_explorer.png)
+![empty log explorer](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/empty_log_explorer.png)
 
 1. Go in [Datadog Logs section](https://app.datadoghq.com/logs)
 2. Click **Getting Started**

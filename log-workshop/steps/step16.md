@@ -1,27 +1,11 @@
-Let's build a monitor upon our logs that warns us if an error occurs and that send us the corresponding logs:
+To add an attribute as a Facet and start using it in your log analytics, click on it:
 
-Enter the search you want to monitor logs from in your Log explorer search bar:
+![create facet](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/create_facet.png)
 
-![monitor query](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/monitor_query.png)
+Don't forget to assign a group to your facet in order to avoid polluting your Log explorer view:
 
-Click on the export to monitor button in the upper right corner of the Log explorer page:
+![create facet group](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/creating_facet_group.png)
 
-![export to monitor](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/export_to_monitor.png)
+**Note**: Attributes value are indexed AFTER a facet is created:
 
-Set up a Warning and Alert threshold for your Log monitor
-
-Set the monitor title and template the notification sent.
-
-![monitor configuration](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/monitor_configuration.png)
-
-### Save your monitor.
-
-Check that your monitor is correctly saved in your manage monitor page.
-
-![manage monitor page](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/manage_monitor_page.png)
-
-### Monitor notification
-
-If you entered your email address in the notification, you should receive an email with a snippet of 10 logs matching your query:
-
-![mail notification](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/mail_notification.png)
+![facet_not_indexed](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/facet_not_indexed.png)
