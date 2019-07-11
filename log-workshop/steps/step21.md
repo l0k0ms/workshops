@@ -2,15 +2,15 @@ Solutions
 
 ### Create a dedicated Pipeline
 
-Let's start to go to the pipeline section again and create a new pipeline to only parse those logs:
+Let's go to the pipeline section again and create a new pipeline to only parse these logs:
 
-![Create a pipeline](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/create_a_pipeline.png)
+![Create a pipeline](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/create_a_pipeline.png)
 
 ### Grok parser
 
-Create a Grok parser processor to parse your full text logs and transform it into a JSON.
+Create a Grok parser processor to parse your full-text logs and transform it into a JSON.
 
-![Grok parser](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/grok_parser.png)
+![Grok parser](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/grok_parser.png)
 
 #### The full grok rule is:
 
@@ -32,9 +32,9 @@ The previous grok rules implements [Datadog naming convention](https://docs.data
 
 An access log by definition doesn't have any status attached, but there is a way to assign your log a status depending on the value of the http.status_code attribute. For this create a category processor:
 
-And add 4 categories to it:
+And add four categories to it:
 
-![create a category](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/create_a_category.png)
+![create a category](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/create_a_category.png)
 
 All events that match:  Appear under the value name:
 
@@ -50,10 +50,14 @@ All events that match:  Appear under the value name:
 
 Create a status remapper processor to take the category we just created and remap it as your official log status:
 
-![status remapper](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/status_remapper.png)
+![status remapper](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/status_remapper.png)
 
 ### Url Parser
 
-Finally, create an url parser to extract all query parameters from your requested URL:
+Finally, create an URL parser to extract all query parameters from your requested URL:
 
-![url parser](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/url_parser.png)
+![url parser](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/url_parser.png)
+
+### Getting further
+
+Add the facets: `http.status_code`, `http.url_details.path`, and `http.method` in order to benefit from specific UI enhancements.

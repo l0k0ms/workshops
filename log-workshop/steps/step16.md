@@ -2,7 +2,7 @@ To add an attribute as a Facet and start using it in your log analytics, click o
 
 ![create facet](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/create_facet.png)
 
-Don't forget to assign a group to your facet in order to avoid polluting your Log explorer view:
+Don't forget to assign a group to your facet to avoid polluting your Log explorer view:
 
 ![create facet group](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/creating_facet_group.png)
 

@@ -17,10 +17,6 @@ The relation between Log status and status code is:
 | [400 TO 499] | warning   |
 | [500 TO 599] | error     |
 
-If you succeed correctly the final result should look like this:
+If you succeed, the final result should look like this:
 
 ![log parsed](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/log_parsed.png)
-
-### Getting further
-
-Add the facets: `http.status_code`, `http.url_details.path`, and `http.method` in order to benefit from specific UI enhancements.
