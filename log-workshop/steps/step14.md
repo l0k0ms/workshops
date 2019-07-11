@@ -4,4 +4,4 @@ It's still possible to view these logs with the [Live tail](https://app.datadogh
 
 The live tail page displays all logs after the Pipeline section but before the index filter one. If you enter the following query: `service:agent`, you can see the parsed agent log even if they won't be indexed:
 
-![agent_log_live_tail](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/agent_log_live_tail.png)
+![agent_log_live_tail](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/agent_log_live_tail.png)

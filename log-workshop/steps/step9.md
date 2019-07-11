@@ -12,16 +12,16 @@ Set up a Warning and Alert threshold for your Log monitor.
 
 Set the monitor title and template the notification sent:
 
-![monitor configuration](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/monitor_configuration.png)
+![monitor configuration](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/monitor_configuration.png)
 
 ### Save your monitor.
 
 Check that your monitor is correctly saved in your manage monitor page:
 
-![manage monitor page](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/manage_monitor_page.png)
+![manage monitor page](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/manage_monitor_page.png)
 
 ### Monitor notification
 
 If you entered your email address in the notification, you should receive an email with a snippet of 10 logs matching your query:
 
-![mail notification](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/mail_notification.png)
+![mail notification](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/mail_notification.png)

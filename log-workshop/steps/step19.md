@@ -8,7 +8,7 @@ Kill the container named `log-workshop-*_pumps` with:
 
 When trying to add a new pump in the application, nothing should happen, and the traceback should appear in the log explorer, but they are not parsed well, and the \n inside of them is messing with the log wrapping:
 
-![traceback not wrapped](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/traceback_not_wrapped.png)
+![traceback not wrapped](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/traceback_not_wrapped.png)
 
 There are two options to fix this:
 
@@ -29,4 +29,4 @@ Let's update the label with the following rule:
 
 Stacktraces from the `iot-frontend` service are now properly wrapped in the Log explorer view:
 
-![traceback properly wrapped](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/assets/images/traceback_properly_wrapped.png)
+![traceback properly wrapped](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/traceback_properly_wrapped.png)
