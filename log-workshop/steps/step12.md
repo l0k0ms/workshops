@@ -1,5 +1,3 @@
-Now that our logs are correctly labeled, we can manipulate them during processing in Datadog.
-
 Let's go to the [Pipeline page](https://app.datadoghq.com/logs/pipelines) of Datadog and see what we have:
 
 ![pipeline_page](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/pipeline_page.png)

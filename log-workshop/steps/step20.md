@@ -5,8 +5,8 @@ Now execute this command `log_bomb`{{execute}} This should generate a huge amoun
 Your mission, shall you accept it is to:
 
 1. Understand what those logs are ([patterns](https://app.datadoghq.com/logs/patterns) might help you)
-2. Parse them in order to extract all attributes possible.
-3. Assign a status depending of the Status Code.
+2. Parse them in order to extract all attributes possible following [Datadog Naming convention](https://docs.datadoghq.com/logs/processing/attributes_naming_convention/)
+3. Assign a Log status depending of the Status Code.
 
 The relation between Log status and status code is:
 

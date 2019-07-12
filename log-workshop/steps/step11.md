@@ -1,1 +1,1 @@
-Break time
+![Break time](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/break_time.png)
