@@ -30,4 +30,4 @@ To finish the new processing strategy, create a new message remapper processor:
 
 If you followed the instructions above, your Redis logs should look like this now:
 
-![logs_properly_processed](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/logs_properly_processed.png)
+![logs_properly_processed](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/new_python_log.png)

@@ -6,4 +6,4 @@ The `source` tag already enabled the `Agent`, `Redis`, and `Python` integration 
 
 Which now automatically parse `Agent`, `Redis`, and `Python` logs:
 
-![redis_log](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/redis_log.png)
+![redis_log](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/redis_log_source.png)
