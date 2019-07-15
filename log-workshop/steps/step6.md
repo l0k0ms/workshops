@@ -6,14 +6,54 @@ Datadog has a wide range of log integrations. To enable the Log integration pipe
 
 **The service tag is key for binding metrics traces and logs.**
 
-This application is already set up for APM. So, let's add the service tags to the `iot-frontend`, `noder`, `pumps`, `redis`, `sensor`, `db` and `adminer` containers to bind the traces and the logs together.
+This application is already set up for APM. So, let's add the service tags to the `iot-frontend`, `noder`, `pumps`, `redis`, `sensor`, `db` and `adminer` containers to bind the traces and the logs together:
 
-Update your `docker-compose.yml` file at the root directory of the workshop with the following labels:
+1. Update your `docker-compose.yml` file at the root directory of the workshop by clicking on: `add_labels`{{execute}}
 
-`add_labels`{{execute}}
+2. **Reload your application**: `application_reload`{{execute}}
 
-**Reload your application**: `application_reload`{{execute}} And go generate some actions:
+3. Generate some actions: https://[[HOST_SUBDOMAIN]]-5000-[[KATACODA_HOST]].environments.katacoda.com/
 
-https://[[HOST_SUBDOMAIN]]-5000-[[KATACODA_HOST]].environments.katacoda.com/
+4. Go to your Log explorer view to see the new service tags flowing in.
 
-Finally, go to your Log explorer view to see the new service tags flowing in:
+The following labels have been added:
+
+```
+version: '3'
+services:
+  agent:
+    (...)
+    labels:
+      com.datadoghq.ad.logs: '[{"source": "agent", "service": "agent"}]'
+
+  frontend:
+    (...)
+    labels:
+      com.datadoghq.ad.logs: '[{"source": "python", "service": "iot-frontend"}]'
+
+  noder:
+    (...)
+    labels:
+      com.datadoghq.ad.logs: '[{"source": "python", "service": "users-api"}]'
+
+  pumps:
+    (...)
+    labels:
+      com.datadoghq.ad.logs: '[{"source": "python", "service": "pumps-service"}]'
+
+  redis:
+    (...)
+    labels:
+      com.datadoghq.ad.logs: '[{"source": "redis", "service": "redis"}]'
+
+  sensors:
+    (...)
+    labels:
+      com.datadoghq.ad.logs: '[{"source": "python", "service": "sensors-api"}]'
+
+  db:
+    (...)
+    labels:
+      com.datadoghq.ad.logs: '[{"source": "postgresql", "service": "postgres"}]'
+
+```
