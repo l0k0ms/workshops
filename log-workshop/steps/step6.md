@@ -10,45 +10,7 @@ This application is already set up for APM. So, let's add the service tags to th
 
 Update your `docker-compose.yml` file at the root directory of the workshop with the following labels:
 
-```
-version: '3'
-services:
-  agent:
-    (...)
-    labels:
-      com.datadoghq.ad.logs: '[{"source": "agent", "service": "agent"}]'
-
-  frontend:
-    (...)
-    labels:
-      com.datadoghq.ad.logs: '[{"source": "python", "service": "iot-frontend"}]'
-
-  noder:
-    (...)
-    labels:
-      com.datadoghq.ad.logs: '[{"source": "python", "service": "users-api"}]'
-
-  pumps:
-    (...)
-    labels:
-      com.datadoghq.ad.logs: '[{"source": "python", "service": "pumps-service"}]'
-
-  redis:
-    (...)
-    labels:
-      com.datadoghq.ad.logs: '[{"source": "redis", "service": "redis"}]'
-
-  sensors:
-    (...)
-    labels:
-      com.datadoghq.ad.logs: '[{"source": "python", "service": "sensors-api"}]'
-
-  db:
-    (...)
-    labels:
-      com.datadoghq.ad.logs: '[{"source": "postgresql", "service": "postgres"}]'
-
-```
+`add_labels`{{execute}}
 
 **Reload your application**: `application_reload`{{execute}} And go generate some actions:
 

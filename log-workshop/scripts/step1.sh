@@ -22,6 +22,8 @@ echo "export POSTGRES_USER=postgres" >> ~/.bashrc
 
 echo "export POSTGRES_PASSWORD=postgres" >> ~/.bashrc
 
+echo "alias add_labels='mv ./conf.d/docker-compose_with_labels.yaml ./docker-compose.yaml'">> ~/.bashrc
+
 echo "alias application_build='POSTGRES_USER=\$POSTGRES_USER POSTGRES_PASSWORD=\$POSTGRES_PASSWORD DD_API_KEY=\$DD_API_KEY docker-compose up --build -d'">> ~/.bashrc
 
 echo "alias application_up='POSTGRES_USER=\$POSTGRES_USER POSTGRES_PASSWORD=\$POSTGRES_PASSWORD DD_API_KEY=\$DD_API_KEY docker-compose up -d'">> ~/.bashrc
