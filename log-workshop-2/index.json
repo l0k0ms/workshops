@@ -11,7 +11,7 @@
                 "verify": "scripts/step1_verify.sh"
             },
             {
-                "title": "Collecting your first logs",
+                "title": "Log collection overview",
                 "text": "steps/step2.md",
                 "code": "scripts/step2.sh"
             },
@@ -28,69 +28,40 @@
                 "text": "steps/step5.md"
             },
             {
-                "title": "Connect Logs and Traces",
+                "title": "Logs and Traces switch",
                 "text": "steps/step6.md"
             },
             {
-                "title": "Connect Logs and Metrics",
+                "title": "Log Monitors",
                 "text": "steps/step7.md"
             },
             {
-                "title": "Switch between Traces and Logs",
+                "title": "Loggin Without Limits",
                 "text": "steps/step8.md"
             },
             {
-                "title": "Log monitors",
+                "title": "Pipeline page",
                 "text": "steps/step9.md"
             },
             {
-                "title": "Synthetics - Browser tests",
+                "title": "Exclusion Filters",
                 "text": "steps/step10.md"
             },
             {
-                "title": "Break time",
+                "title": "Live Tail",
                 "text": "steps/step11.md"
             },
             {
-                "title": "Integration Pipelines",
+                "title": "Improve Parsing",
                 "text": "steps/step12.md"
             },
             {
-                "title": "Logging without Limits",
+                "title": "Logs Facets",
                 "text": "steps/step13.md"
             },
             {
-                "title": "Live Tail",
+                "title": "Synthetics API Test",
                 "text": "steps/step14.md"
-            },
-            {
-                "title": "Parsing enhancement",
-                "text": "steps/step15.md"
-            },
-            {
-                "title": "Facets",
-                "text": "steps/step16.md"
-            },
-            {
-                "title": "Facets as filters",
-                "text": "steps/step17.md"
-            },
-            {
-                "title": "Facets in Analytics",
-                "text": "steps/step18.md"
-            },
-
-            {
-                "title": "Multi-line logs",
-                "text": "steps/step19.md"
-            },
-            {
-                "title": "Going Further - Advanced Exercise",
-                "text": "steps/step20.md"
-            },
-            {
-                "title": "Answers",
-                "text": "steps/step21.md"
             }
         ],
         "intro": {

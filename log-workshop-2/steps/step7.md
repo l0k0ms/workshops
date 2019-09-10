@@ -1,10 +1,27 @@
-![installed integration](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/installed_integrations.png)
+Let's build a monitor on our logs that warns us if an error occurs and that send us the corresponding logs:
 
-Since our containers are correctly labeled, the [Datadog-Docker](https://app.datadoghq.com/account/settings#integrations/docker) integration and the [Datadog-Redis](https://app.datadoghq.com/account/settings#integrations/redis) integrations are both installed, and their corresponding dashboards are displaying some data:
+Enter the search you want to monitor logs from in your Log explorer search bar:
 
-* [Docker Dashboard](https://app.datadoghq.com/screen/integration/52/docker---overview)
-* [Redis Dashboard](https://app.datadoghq.com/screen/integration/15/redis---overview)
+![monitor query](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/monitor_query.png)
 
-On any given dashboard, you can click on a displayed metric to switch to the corresponding logs:
+Click on the export to monitor button in the upper right corner of the Log explorer page:
 
-![metrics switch to logs](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/metrics_switch_to_logs.png)
+![export to monitor](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/export_to_monitor.png)
+
+Set up a Warning and Alert threshold for your Log monitor.
+
+Set the monitor title and template the notification sent:
+
+![monitor configuration](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/monitor_configuration.png)
+
+### Save your monitor.
+
+Check that your monitor is correctly saved in your manage monitor page:
+
+![manage monitor page](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/manage_monitor_page.png)
+
+### Monitor notification
+
+If you entered your email address in the notification, you should receive an email with a snippet of 10 logs matching your query:
+
+![mail notification](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/mail_notification.png)

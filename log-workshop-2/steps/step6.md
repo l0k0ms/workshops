@@ -1,17 +1,20 @@
-To gain more visibility about which container emitted which logs and to bind your logs with the previously implemented APM and metrics, let's use Labels to specify the `source` and the `service` tags for each container logs.
 
-**The source tag is key to enable the integration pipeline**
+The service tag now allows us to switch between our log explorer view and the corresponding APM service:
 
-Datadog has a wide range of log integrations. To enable the Log integration pipelines in Datadog, pass the source name as a value for the source attribute with a docker label. See the [full list of supported log sources](https://docs.datadoghq.com/logs/guide/integration-pipeline-reference/).
+![iot frontend switch ](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/iot_frontend_switch.png)
 
-**The service tag is key for binding metrics traces and logs.**
+1. Open a log from `iot-frontend` service by clicking on it.
 
-This application is already set up for APM. So, let's add the service tags to the `iot-frontend`, `noder`, `pumps`, `redis`, `sensor`, `db` and `adminer` containers to bind the traces and the logs together:
+2. On top of the contextual panel, click on the `iot-frontend` Service name.
 
-1. Update your `docker-compose.yml` file at the root directory of the workshop by clicking on: `add_labels`{{execute}}
+    You should arrive on this page in Datadog APM:
 
-2. **Reload your application**: `application_reload`{{execute}}
+![iot-frontend-service-page](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/iot-frontend_service_page.png)
 
-3. Generate some actions: https://[[HOST_SUBDOMAIN]]-5000-[[KATACODA_HOST]].environments.katacoda.com/
 
-4. Go to your Log explorer view to see the new service tags flowing in.
+With the Trace ID, we are now able to bind a log to the corresponding trace:
+
+1. Open a log from the `iot-frontend` service.
+2. Select the Trace icon next to the service name to see the associated trace:
+
+![associated trace](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/associated_trace.png)

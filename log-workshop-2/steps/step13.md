@@ -1,13 +1,20 @@
-## Exclusion filter
+To add an attribute as a Facet and start using it in your log analytics, click on it:
 
-Let's set up the following Index filters to control which logs get indexed.
+![create facet](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/create_facet.png)
 
-![Exclusion filter](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/exclusion_filter.png)
+Don't forget to assign a group to your facet to avoid polluting your Log explorer view:
 
-Go to your [Datadog Index page](https://app.datadoghq.com/logs/pipelines/indexes) to create your first filter.
+![create facet group](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/creating_facet_group.png)
 
-### Removing Agent logs
+**Note**: Attributes value are indexed AFTER a facet is created:
 
-To clean our log explorer from logs that are not relevant for our use case, let's implement an index filter:
+![facet_not_indexed](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/facet_not_indexed.png)
 
-![index filter agent log](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/index_filter_agent_log.png)
+Use your new facet to filter your log explorer view:
+
+![facet_filter_search](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/facet_filter_search.png)
+
+
+Or in your Log analytics:
+
+![log analytics](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/log_analytics.png)
