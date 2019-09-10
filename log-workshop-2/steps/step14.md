@@ -13,8 +13,8 @@ The first Synthetics test you want to create is an API test to check if your app
 
 Now everytime your test runs, you will have access to its results, and how your backend behaved:
 
-![api_test](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/api_test.png)
+![api_test](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/api_test.png)
 
 Because API tests inject a custom id when reaching the endpoint, Datadog is able to display the associated trace and logs:
 
-![api_test_with_trace](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/api_test_with_trace.png)
+![api_test_with_trace](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/api_test_with_trace.png)

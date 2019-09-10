@@ -1,1 +1,1 @@
-![Logging Without Limits](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/logging_without_limits.png)
+![Logging Without Limits](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/logging_without_limits.png)
