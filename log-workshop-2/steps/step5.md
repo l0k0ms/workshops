@@ -1,18 +1,10 @@
-Logs should be showing in your [log explorer view](https://app.datadoghq.com/logs). You can see that Datadog assigns a service name to your logs based upon the docker image name that emitted it:
+![installed integration](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/installed_integrations.png)
 
-![redis_log](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/redis_log.png)
+Since our containers are correctly labeled, the [Datadog-Docker](https://app.datadoghq.com/account/settings#integrations/docker) integration and the [Datadog-Redis](https://app.datadoghq.com/account/settings#integrations/redis) integrations are both installed, and their corresponding dashboards are displaying some data:
 
-It works automatically with known images, but if you have a custom application name, the service name may not match the services in APM so you need to set it up with a custom label:
+* [Docker Dashboard](https://app.datadoghq.com/screen/integration/52/docker---overview)
+* [Redis Dashboard](https://app.datadoghq.com/screen/integration/15/redis---overview)
 
-```yaml
-labels:
-      com.datadoghq.ad.logs: '[{"source": "python", "service": "users-api"}]'
-```
+On any given dashboard, you can click on a displayed metric to switch to the corresponding logs:
 
-The `source` and the `service` tags specified with labels for each container logs are the key to gain more visibility about which container emitted which logs and to bind your logs with the previously implemented APM and metrics.
-
-**The source tag is key to enable the integration pipeline**
-
-Datadog has a wide range of log integrations. To enable the Log integration pipelines in Datadog, pass the source name as a value for the source attribute with a docker label. See the [full list of supported log sources](https://docs.datadoghq.com/logs/guide/integration-pipeline-reference/).
-
-**The service tag is key for binding metrics traces and logs.**
+![metrics switch to logs](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop/images/metrics_switch_to_logs.png)

@@ -1,7 +1,7 @@
-Now that we have filtered out our Agent logs and all of our Debug logs, our explorer view is cleaner, but what if we still want to consult those logs that we filtered out?
+Let's kill a container and see what happens:
 
-It's still possible to view these logs with the [Live tail](https://app.datadoghq.com/logs/livetail).
+Check the list of running containers with `docker ps`{{execute}}
 
-The live tail page displays all logs after the Pipeline section but before the index filter one. If you enter the following query: `service:agent`, you can see the parsed agent log even if they won't be indexed:
+Kill the container named `log-workshop-*_pumps` with:
 
-![agent_log_live_tail](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/agent_log_live_tail.png)
+`docker kill <CONTAINER_ID>`{{copy}}

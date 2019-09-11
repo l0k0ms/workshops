@@ -11,57 +11,69 @@
                 "verify": "scripts/step1_verify.sh"
             },
             {
-                "title": "Log collection overview",
+                "title": "Launching the application",
                 "text": "steps/step2.md",
                 "code": "scripts/step2.sh"
             },
             {
-                "title": "Launching the application",
+                "title": "Log collection overview",
                 "text": "steps/step3.md"
             },
             {
-                "title": "Explore data collected in Datadog",
+                "title": "The source and service attributes",
                 "text": "steps/step4.md"
             },
             {
-                "title": "Log Explorer view",
+                "title": "Dashboards",
                 "text": "steps/step5.md"
             },
             {
-                "title": "Logs and Traces switch",
+                "title": "Containers Page",
                 "text": "steps/step6.md"
             },
             {
-                "title": "Log Monitors",
+                "title": "Going from APM to Logs",
                 "text": "steps/step7.md"
             },
             {
-                "title": "Loggin Without Limits",
+                "title": "Going from Logs to APM",
                 "text": "steps/step8.md"
             },
             {
-                "title": "Pipeline page",
+                "title": "Log monitor per service",
                 "text": "steps/step9.md"
             },
             {
-                "title": "Exclusion Filters",
+                "title": "Browser Test",
                 "text": "steps/step10.md"
             },
             {
-                "title": "Live Tail",
+                "title": "Creating Chaos",
                 "text": "steps/step11.md"
             },
             {
-                "title": "Improve Parsing",
+                "title": "Logging without Limits",
                 "text": "steps/step12.md"
             },
             {
-                "title": "Logs Facets",
+                "title": "Exclusion filter",
                 "text": "steps/step13.md"
             },
             {
-                "title": "Synthetics API Test",
+                "title": "Generate Metrics",
                 "text": "steps/step14.md"
+            },
+            {
+                "title": "New monitor over the Generated metrics",
+                "text": "steps/step15.md"
+            },
+            {
+                "title": "Live Tail",
+                "text": "steps/step16.md"
+            },
+            {
+                "title": "Archiving and Rehydrating logs.",
+                "text": "steps/step17.md"
             }
         ],
         "intro": {

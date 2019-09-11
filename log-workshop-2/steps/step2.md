@@ -1,21 +1,7 @@
-The following configuration lines in your `docker-compose.yml` file at the root of the workshop directory allows to enable log collection.
+Launch the application by clicking on the `application_build`{{execute}} command.
 
-```
- agent:
-   environment:
-     (...)
-     - DD_LOGS_ENABLED=true
-     - DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true
-   volume:
-     (...)
-     - /opt/datadog-agent/run:/opt/datadog-agent/run:rw
-```
+After seeing the logs flowing in your terminal click on `APPLICATION DASHBOARD` tab of the terminal to see the application running or access this link:
 
+    https://[[HOST_SUBDOMAIN]]-5000-[[KATACODA_HOST]].environments.katacoda.com/
 
-| Configuration                                    | type         | Explanations                                    |
-| -------                                          | -----        | ------                                          |
-| DD_LOGS_ENABLED=true                             | env variable | Enables log collection                          |
-| DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true        | env variable | Enables log collection for all containers       |
-| /opt/datadog-agent/run:/opt/datadog-agent/run:rw | volume       | Used to store pointers on container current log |
-
-[Refer to the Datadog Agent log collection documentation to learn more.](https://docs.datadoghq.com/agent/docker/logs)
+Refresh the Application page, click around, add a pump, try adding a city. This begins to generate metrics, APM traces, and logs for your application.
