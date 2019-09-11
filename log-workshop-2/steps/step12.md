@@ -1,4 +1,7 @@
-There are too much logs in the logs explorer.
+Let's kill a container and see what happens:
 
+Check the list of running containers with `docker ps`{{execute}}
 
-![Logging Without Limits](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/logging_without_limits.png)
+Kill the container named `log-workshop-*_pumps` with:
+
+`docker kill <CONTAINER_ID>`{{copy}}

@@ -44,36 +44,40 @@
                 "text": "steps/step9.md"
             },
             {
-                "title": "Browser Test",
+                "title": "Browser Logging",
                 "text": "steps/step10.md"
             },
             {
-                "title": "Creating Chaos",
+                "title": "Browser Test",
                 "text": "steps/step11.md"
             },
             {
-                "title": "Logging without Limits",
+                "title": "Creating Chaos",
                 "text": "steps/step12.md"
             },
             {
-                "title": "Exclusion filter",
+                "title": "Logging without Limits",
                 "text": "steps/step13.md"
             },
             {
-                "title": "Generate Metrics",
+                "title": "Exclusion filter",
                 "text": "steps/step14.md"
             },
             {
-                "title": "New monitor over the Generated metrics",
+                "title": "Generate Metrics",
                 "text": "steps/step15.md"
             },
             {
-                "title": "Live Tail",
+                "title": "New monitor over the Generated metrics",
                 "text": "steps/step16.md"
             },
             {
-                "title": "Archiving and Rehydrating logs.",
+                "title": "Live Tail",
                 "text": "steps/step17.md"
+            },
+            {
+                "title": "Archiving and Rehydrating logs.",
+                "text": "steps/step18.md"
             }
         ],
         "intro": {

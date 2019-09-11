@@ -1,1 +1,3 @@
-## Build a monitor over the Generated Metric
+## Generate metrics
+
+Generate metrics per service and per status.

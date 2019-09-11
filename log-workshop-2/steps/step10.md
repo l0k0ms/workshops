@@ -1,1 +1,1 @@
-In order to be pro-active, let's build up a browser test:
+## Browser logging
