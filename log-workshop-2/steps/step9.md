@@ -8,17 +8,15 @@ Click on the export to monitor button in the upper right corner of the Log explo
 
 ![export to monitor](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/export_to_monitor.png)
 
-Set up a Warning and Alert threshold for your Log monitor.
+Set up a Warning and Alert threshold for your Log monitor, then give your monitor a title and define the notification template:
 
-Set the monitor title and template the notification sent:
-
-![monitor configuration]()
+![monitor configuration](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/monitor_configuration.png)
 
 ### Save your monitor.
 
 Check that your monitor is correctly saved in your manage monitor page:
 
-![manage monitor page]()
+![manage monitor page](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/manage_monitor_page.png)
 
 ### Monitor notification
 
