@@ -2,7 +2,7 @@ Let's build a monitor on our logs that warns us if too many errors occur for a g
 
 Enter the search you want to monitor logs from in your Log explorer search bar:
 
-![monitor query]()
+![monitor query](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/log_query_monitor.png)
 
 Click on the export to monitor button in the upper right corner of the Log explorer page:
 
@@ -22,4 +22,4 @@ Check that your monitor is correctly saved in your manage monitor page:
 
 If you entered your email address in the notification, you should receive an email with a snippet of 10 logs matching your query:
 
-![mail notification]()
+![mail notification](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/mail_notification.png)

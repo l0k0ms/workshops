@@ -48,36 +48,24 @@
                 "text": "steps/step10.md"
             },
             {
-                "title": "Browser Test",
+                "title": "API Test",
                 "text": "steps/step11.md"
             },
             {
-                "title": "Creating Chaos",
+                "title": "Enrinching Logs",
                 "text": "steps/step12.md"
             },
             {
-                "title": "Logging without Limits",
+                "title": "Creating Facets",
                 "text": "steps/step13.md"
             },
             {
-                "title": "Exclusion filter",
+                "title": "Using Facets",
                 "text": "steps/step14.md"
             },
             {
-                "title": "Generate Metrics",
+                "title": "Build a monitor over a Facet",
                 "text": "steps/step15.md"
-            },
-            {
-                "title": "New monitor over the Generated metrics",
-                "text": "steps/step16.md"
-            },
-            {
-                "title": "Live Tail",
-                "text": "steps/step17.md"
-            },
-            {
-                "title": "Archiving and Rehydrating logs.",
-                "text": "steps/step18.md"
             }
         ],
         "intro": {

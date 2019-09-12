@@ -10,7 +10,7 @@ As told previously, the `service` tag allows to switch between the log explorer 
 
 You should arrive on this page in Datadog APM:
 
-![iot-frontend-service-page](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/iot-frontend_service_page.png)
+![iot-frontend-service-page](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/service_overview.png)
 
 ### Trace id link
 

@@ -1,13 +1,7 @@
-## Exclusion filter
+Use your new facet to filter your log explorer view:
 
-Let's set up the following Index filters to control which logs get indexed.
+![facet_filter_search](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/facet_filter_search.png)
 
-![Exclusion filter](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/exclusion_filter.png)
+Or in your Log analytics:
 
-Go to your [Datadog Index page](https://app.datadoghq.com/logs/pipelines/indexes) to create your first filter.
-
-### Removing Agent logs
-
-To clean our log explorer from logs that are not relevant for our use case, let's implement an index filter:
-
-![index filter agent log](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/index_filter_agent_log.png)
+![log analytics](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/log_analytics.png)
