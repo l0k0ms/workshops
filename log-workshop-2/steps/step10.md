@@ -14,7 +14,12 @@ To reduce even further the MTTR, let's be pro-active and log directly from the u
         forwardErrorsToLogs: true,
     });
 
-    DD_LOGS.addLoggerGlobalContext({'service': 'browser','http.url': window.location.href });
-    DD_LOGS.logger.log('Page loaded'});
+    DD_LOGS.addLoggerGlobalContext({'service': 'browser', 'hostname': 'browser' });
+    DD_LOGS.logger.log('Page loaded');
 </script>
+<script>
+    // Custom logging in another script
+    DD_LOGS.logger.log('Page loaded');
+</script>
+
 ```
