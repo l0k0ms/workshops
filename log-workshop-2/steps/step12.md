@@ -1,4 +1,4 @@
-Let's kill a container and see what happens:
+Let's now kill a container and see what happens:
 
 Check the list of running containers with `docker ps`{{execute}}
 
