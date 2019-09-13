@@ -1,5 +1,7 @@
 Let's build a monitor on our logs that warns us if too many errors occur for a given service:
 
+### Create your monitor
+
 Enter the search you want to monitor logs from in your Log explorer search bar:
 
 ![monitor query](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/log_query_monitor.png)
@@ -12,7 +14,7 @@ Set up a Warning and Alert threshold for your Log monitor, then give your monito
 
 ![monitor configuration](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/monitor_configuration.png)
 
-### Save your monitor.
+### Save your monitor
 
 Check that your monitor is correctly saved in your manage monitor page:
 

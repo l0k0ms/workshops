@@ -10,7 +10,7 @@ Where you can see all containers running with their associated:
 
 ![Container view](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/container_view.png)
 
-When zooming on a given container you can see the processes running inside it with its key metrics:
+When zooming on a given container, you can see the processes running inside it with its key metrics:
 
 ![Container in depth details metrics](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/container_focus_with_metrics.png)
 

@@ -1,4 +1,4 @@
-Solutions
+Don't read the solutions if you haven't tried a bit ;)
 
 ### Create a dedicated Pipeline
 

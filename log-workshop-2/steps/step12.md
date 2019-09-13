@@ -6,7 +6,7 @@ The python encapsulation is extracted but left as is in our log message.
 
 Let's remove all duplicated information to keep only the core content of our log in our message:
 
-Go the [Log configuration page](https://app.datadoghq.com/logs/pipelines) and start by cloning our python pipeline
+Go the [Log configuration page](https://app.datadoghq.com/logs/pipelines) and start by cloning our python pipeline.
 
 ![Duplicating pipeline](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/duplicating_pipeline.png)
 

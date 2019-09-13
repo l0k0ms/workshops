@@ -1,6 +1,6 @@
 ## Browser logging
 
-To reduce even further the MTTR, let's be pro-active and log directly from the user-perspective with Datadog browser log managment. [Instructions can be found in the in-app documentation](https://app.datadoghq.com/logs/onboarding/client)
+To reduce even further the MTTR, let's be proactive and log directly from the user-perspective with Datadog browser log management. [Instructions can be found in the in-app documentation](https://app.datadoghq.com/logs/onboarding/client)
 
 1. Open the `frontend/static/index.html` file.
 2. In the `<head>` add the following lines:
@@ -18,7 +18,7 @@ To reduce even further the MTTR, let's be pro-active and log directly from the u
     </script>
     ```
 
-    This sends a custom log everytime the page is loaded to Datadog and will forward any errors being logged in the browser console.
+    This sends a custom log every time the page is loaded to Datadog and will forward any errors being logged in the browser console.
 
 3. Replace the `<CLIENT_TOKEN>` placeholder with a [client token associated with your Datadog application](https://app.datadoghq.com/account/settings#api).
 4. Open the `docker_compose.yml` file and build the frontend image:

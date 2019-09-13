@@ -1,5 +1,4 @@
-Since this application is running over Docker container, in order to collect all monitoring data, the Datadog Agent runs as a container alonside the one of your application. The Datadog Agent container is configured via environment variables and mounting volumes on the underlying host:
-
+Since this application is running over Docker containers, in order to collect all monitoring data, the Datadog Agent runs as a container alongside the one of your application. The Datadog Agent container is configured via environment variables and mounting volumes on the underlying host:
 
 ```yaml
 agent:
@@ -23,7 +22,7 @@ agent:
       com.datadoghq.ad.logs: '[{"source": "agent", "service": "agent"}]'
 ```
 
-By default the Agent needs only your Datadog API key in order to start collecting metrics from your other containers, but with extra configuration it can also collects your application Traces, your logs, and your processes data:
+By default the Agent needs only your Datadog API key in order to start collecting metrics from your other containers, but with extra configurations it can also collect your application Traces, logs, and processes data:
 
 ### Trace collection
 
@@ -31,9 +30,11 @@ To allow for Trace collection coming from other containers, the port `8126` is o
 
 Next, the `DD_APM_ENABLED` environment variable is set to `true`. Although enabled by default, setting this variable lets other people know you are using APM.
 
+[Learn more on the Datadog APM documentation](https://docs.datadoghq.com/tracing/send_traces/#containers)
+
 ### Log collection
 
-More precisely for logs, the following configuration lines in your `docker-compose.yml` file at the root of the workshop directory allows to enable log collection:
+The following configuration lines in your `docker-compose.yml` file at the root of the workshop directory allow to enable log collection for all running containers:
 
 ```
  agent:
