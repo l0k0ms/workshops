@@ -48,11 +48,7 @@
                 "text": "steps/step10.md"
             },
             {
-                "title": "API Test",
-                "text": "steps/step11.md"
-            },
-            {
-                "title": "Enrinching Logs",
+                "title": "Enriching Logs",
                 "text": "steps/step12.md"
             },
             {
@@ -70,6 +66,10 @@
             {
                 "title": "Answers",
                 "text": "steps/step16.md"
+            },
+            {
+                "title": "API Test",
+                "text": "steps/step11.md"
             }
         ],
         "intro": {
