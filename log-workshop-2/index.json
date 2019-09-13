@@ -64,8 +64,12 @@
                 "text": "steps/step14.md"
             },
             {
-                "title": "Build a monitor over a Facet",
+                "title": "Going Further - Advanced Exercise",
                 "text": "steps/step15.md"
+            },
+            {
+                "title": "Answers",
+                "text": "steps/step16.md"
             }
         ],
         "intro": {

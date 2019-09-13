@@ -30,6 +30,8 @@ echo "alias application_up='POSTGRES_USER=\$POSTGRES_USER POSTGRES_PASSWORD=\$PO
 
 echo "alias application_stop='docker-compose stop && docker-compose rm -f'">> ~/.bashrc
 
+echo "alias log_bomb='docker run -d --label com.datadoghq.ad.logs:='\"'\"'[{\"source\": \"log_bomb\", \"service\": \"apache\"}]'\"'\"' -it --rm mingrammer/flog -f apache_common -l -n 100000 -d 0.2'">> ~/.bashrc
+
 echo "alias application_reload='application_stop && application_up'">> ~/.bashrc
 
 echo "alias new_step='source ~/.bashrc && cd ~/log-workshop"

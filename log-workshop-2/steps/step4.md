@@ -27,7 +27,7 @@ labels:
       com.datadoghq.ad.logs: '[{"source": "python", "service": "users-api"}]'
 ```
 
-In the Datadog Ecosystem, Labels are key to leverage the most out of [Datadog Autodiscovery](https://docs.datadoghq.com/agent/autodiscovery/?tab=agent), if you look at your `docker-compose.yml` file at the root of the workshop directory you can see that each containers have its associated labels:
+In the Datadog Container Ecosystem, **Labels are key** to leverage the most out of [Datadog Autodiscovery](https://docs.datadoghq.com/agent/autodiscovery/?tab=agent), if you look at your `docker-compose.yml` file at the root of the workshop directory you can see that each containers have its associated labels:
 
 ```yaml
 version: '3'
