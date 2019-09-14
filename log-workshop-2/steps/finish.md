@@ -1,1 +1,1 @@
-well done! you're finished!
+That feeling when you've finished the workshop ＼(＾O＾)／

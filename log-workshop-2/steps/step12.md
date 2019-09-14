@@ -1,4 +1,4 @@
-Let's look closer into our logs.
+Let's look closer at our logs.
 
 ![original log](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/original_log.png)
 
@@ -14,7 +14,7 @@ Now that we can edit our pipeline:
 
 1. Open the processor: `Grok Parser: Parsing python default format`.
 2. Comment the `python_format` rule.
-3. Create a new grok parsing rule to properly extract the message:
+3. Create a new grok parsing rule to extract the message:
     ```
     python_format_workshop (%{_python_prefix}|%{_datadog_prefix})\s+%{data:tmp_msg}
     ```

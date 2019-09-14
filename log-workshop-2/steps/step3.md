@@ -22,11 +22,11 @@ agent:
       com.datadoghq.ad.logs: '[{"source": "agent", "service": "agent"}]'
 ```
 
-By default the Agent needs only your Datadog API key in order to start collecting metrics from your other containers, but with extra configurations it can also collect your application Traces, logs, and processes data:
+By default, the Agent needs only your Datadog API key to start collecting metrics from your other containers, but by adding extra configurations, the Agent can also collect your application Traces, logs, and processes data:
 
 ### Trace collection
 
-To allow for Trace collection coming from other containers, the port `8126` is open on the Agent container
+To allow for Trace collection coming from other containers, the port `8126` is open on the Agent container.
 
 Next, the `DD_APM_ENABLED` environment variable is set to `true`. Although enabled by default, setting this variable lets other people know you are using APM.
 

@@ -2,7 +2,7 @@ Don't read the solutions if you haven't tried a bit ;)
 
 ### Create a dedicated Pipeline
 
-Let's go to the pipeline section again and create a new pipeline to only parse these logs:
+Let's go to the pipeline section again and create a new pipeline to parse these logs:
 
 ![Create a pipeline](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/create_a_pipeline.png)
 
@@ -30,7 +30,7 @@ The previous grok rules implements [Datadog naming convention](https://docs.data
 
 ### Category processor
 
-An access log by definition doesn't have any status attached, but there is a way to assign your log a status depending on the value of the http.status_code attribute. For this create a category processor:
+An access log by definition doesn't have any status attached, but there is a way to assign your log a status depending on the value of the http.status_code attribute. For this, create a category processor:
 
 And add four categories to it:
 
