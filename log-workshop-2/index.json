@@ -1,0 +1,91 @@
+{
+    "title": "Datadog Log Workshop",
+    "description": "Workshop for Datadog Log Management",
+    "time": "2 hours",
+    "difficulty": "Medium",
+    "details": {
+        "steps": [{
+                "title": "Datadog Setup",
+                "text": "steps/step1.md",
+                "courseData": "scripts/step1.sh",
+                "verify": "scripts/step1_verify.sh"
+            },
+            {
+                "title": "Launching the application",
+                "text": "steps/step2.md",
+                "code": "scripts/step2.sh"
+            },
+            {
+                "title": "Log collection overview",
+                "text": "steps/step3.md"
+            },
+            {
+                "title": "The source and service attributes",
+                "text": "steps/step4.md"
+            },
+            {
+                "title": "Dashboards",
+                "text": "steps/step5.md"
+            },
+            {
+                "title": "Containers Page",
+                "text": "steps/step6.md"
+            },
+            {
+                "title": "Going from APM to Logs",
+                "text": "steps/step7.md"
+            },
+            {
+                "title": "Going from Logs to APM",
+                "text": "steps/step8.md"
+            },
+            {
+                "title": "Log monitor per service",
+                "text": "steps/step9.md"
+            },
+            {
+                "title": "Browser Logging",
+                "text": "steps/step10.md"
+            },
+            {
+                "title": "Enriching Logs",
+                "text": "steps/step12.md"
+            },
+            {
+                "title": "Creating Facets",
+                "text": "steps/step13.md"
+            },
+            {
+                "title": "Using Facets",
+                "text": "steps/step14.md"
+            },
+            {
+                "title": "Going Further - Advanced Exercise",
+                "text": "steps/step15.md"
+            },
+            {
+                "title": "Answers",
+                "text": "steps/step16.md"
+            },
+            {
+                "title": "API Test",
+                "text": "steps/step11.md"
+            }
+        ],
+        "intro": {
+            "text": "steps/intro.md"
+        },
+        "finish": {
+            "text": "steps/finish.md"
+        }
+    },
+    "environment": {
+        "uilayout": "editor-terminal",
+        "uieditorpath": "/log-workshop",
+        "showdashboard": true,
+        "dashboards": [{ "name": "APPLICATION DASHBOARD", "port": 5000 }]
+    },
+    "backend": {
+        "imageid": "ubuntu"
+    }
+}

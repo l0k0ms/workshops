@@ -40,52 +40,57 @@
                 "text": "steps/step8.md"
             },
             {
-                "title": "Integration Pipelines",
+                "title": "Log monitors",
                 "text": "steps/step9.md"
             },
             {
-                "title": "Logging without Limits",
+                "title": "Synthetics - Browser tests",
                 "text": "steps/step10.md"
             },
             {
-                "title": "Live Tail",
+                "title": "Break time",
                 "text": "steps/step11.md"
             },
             {
-                "title": "Parsing enhancement",
+                "title": "Integration Pipelines",
                 "text": "steps/step12.md"
             },
             {
-                "title": "Facets",
+                "title": "Logging without Limits",
                 "text": "steps/step13.md"
             },
             {
-                "title": "Facets as filters",
+                "title": "Live Tail",
                 "text": "steps/step14.md"
             },
             {
-                "title": "Facets in Analytics",
+                "title": "Parsing enhancement",
                 "text": "steps/step15.md"
             },
             {
-                "title": "Log monitors",
+                "title": "Facets",
                 "text": "steps/step16.md"
             },
             {
-                "title": "Multi-line logs",
+                "title": "Facets as filters",
                 "text": "steps/step17.md"
             },
             {
-                "title": "Synthetics - API tests",
+                "title": "Facets in Analytics",
                 "text": "steps/step18.md"
             },
+
             {
-                "title": "Synthetics - Browser tests",
+                "title": "Multi-line logs",
                 "text": "steps/step19.md"
             },
             {
-                "title": "Going Further with Patterns",
+                "title": "Going Further - Advanced Exercise",
                 "text": "steps/step20.md"
+            },
+            {
+                "title": "Answers",
+                "text": "steps/step21.md"
             }
         ],
         "intro": {
