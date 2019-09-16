@@ -1,6 +1,6 @@
 ## Browser logging
 
-To reduce even further the MTTR, let's be proactive and log directly from the user-perspective with Datadog browser log management. [Instructions can be found in the in-app documentation](https://app.datadoghq.com/logs/onboarding/client)
+To reduce the MTTR even further, let's be proactive and log directly from the users perspective with Datadog browser log management. For full instructions, see the [the in-app documentation](https://app.datadoghq.com/logs/onboarding/client)
 
 1. Open the `frontend/static/index.html` file.
 2. In the `<head>` add the following lines:
