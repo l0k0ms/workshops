@@ -1,0 +1,35 @@
+{
+    "title": "Datadog Log Workshop 3",
+    "description": "Workshop for Datadog Log Management",
+    "time": "2 hours 30 mins",
+    "difficulty": "Beginner",
+    "details": {
+        "steps": [{
+                "title": "Datadog Setup",
+                "text": "steps/step1.md",
+            },
+            {
+                "title": "Launching the application",
+                "text": "steps/step2.md",
+                "code": "scripts/step2.sh"
+            }
+        ],
+        "intro": {
+            "text": "steps/intro.md"
+        },
+        "finish": {
+            "text": "steps/finish.md"
+        }
+    },
+    "environment": {
+        "uilayout": "editor-terminal",
+        "uieditorpath": "/root/app-files",
+        "hideHiddenFiles": true,
+        "exclusionPatterns": ["**/store-frontend/tmp/*", "**/store-frontend/log/*"],
+        "showdashboard": true,
+        "dashboards": [{"name": "storedog", "port": 3000}]
+      },
+    "backend": {
+        "imageid": "datadog-ecommerce-observability"
+    }
+}
