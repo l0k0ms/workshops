@@ -14,11 +14,32 @@
             }
         ],
         "intro": {
-            "text": "steps/intro.md"
+            "text": "steps/intro.md",
+            "code": "foreground.sh",
+            "courseData": "background.sh"
         },
         "finish": {
             "text": "steps/finish.md"
-        }
+        },
+        "assets": {
+            "host01": [
+              {
+                "file": "grademe",
+                "target": "/usr/local/bin/",
+                "chmod": "+x"
+              },
+              {
+                "file": "prep-environment",
+                "target": "/usr/local/bin/",
+                "chmod": "+x"
+              },
+              {
+                "file": "check-file",
+                "target": "/usr/local/bin/",
+                "chmod": "+x"
+              }
+            ]
+          }
     },
     "environment": {
         "uilayout": "editor-terminal",
