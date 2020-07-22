@@ -1,5 +1,10 @@
 #!/bin/bash
 
+touch ~/.bashrc
+
+echo "alias app_start='docker-compose -f docker-compose-fixed-instrumented-no-log.yml up -d'">> ~/.bashrc
+echo "alias app_stop='docker-compose stop && docker-compose rm -f'">> ~/.bashrc
+
 mkdir /root/app-files
 
 echo "Workshop folder created !" | wall -n
