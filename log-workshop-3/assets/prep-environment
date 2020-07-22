@@ -1,10 +1,10 @@
 #! /usr/bin/env bash
 
-printf '\n\nPreparing the environment!\n\n'
+printf '\n\nStarting the environment!\n\n'
 
 until $(curl -o /dev/null -s -I -f http://localhost:3000); do
     printf '.'
-    sleep 2
+    sleep 1
 done
 
-printf '\n\nThe environment is prepared!\n\n'
+printf '\n\nThe environment is started!\n\n'
