@@ -1,12 +1,17 @@
 #!/bin/bash
 
+sleep 2
+
 touch ~/.bashrc
 
 echo "alias app_start='docker-compose -f docker-compose-fixed-instrumented-no-log.yml up -d'">> ~/.bashrc
-echo "alias app_stop='docker-compose stop && docker-compose rm -f'">> ~/.bashrc
+echo "alias app_start_with_logs='docker-compose -f docker-compose-fixed-instrumented-no-log.yml up'">> ~/.bashrc
+echo "alias app_stop='docker-compose -f docker-compose-fixed-instrumented-no-log.yml stop && docker-compose -f docker-compose-fixed-instrumented-no-log.yml rm -f'">> ~/.bashrc
+
+echo "\n\n\n\n\n\n" | wall -n
+echo "Initialization, please wait" | wall -n
 
 mkdir /root/app-files
-
 echo "Workshop folder created !" | wall -n
 
 echo "Cloning Application repository !" | wall -n

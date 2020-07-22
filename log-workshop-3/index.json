@@ -5,12 +5,16 @@
     "difficulty": "Beginner",
     "details": {
         "steps": [{
-                "title": "Datadog Setup",
-                "text": "steps/step1.md"
+                "title": "Datadog log in",
+                "text": "steps/datadog-log-in.md"
             },
             {
-                "title": "Launching the application",
-                "text": "steps/step2.md"
+                "title": "Wait a minute… how does it works ?",
+                "text": "steps/log-collection.md"
+            },
+            {
+                "title": "Tagging is the key",
+                "text": "steps/tagging-overview.md"
             }
         ],
         "intro": {
