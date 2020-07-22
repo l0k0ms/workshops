@@ -6,12 +6,11 @@
     "details": {
         "steps": [{
                 "title": "Datadog Setup",
-                "text": "steps/step1.md",
+                "text": "steps/step1.md"
             },
             {
                 "title": "Launching the application",
-                "text": "steps/step2.md",
-                "code": "scripts/step2.sh"
+                "text": "steps/step2.md"
             }
         ],
         "intro": {
