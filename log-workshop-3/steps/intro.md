@@ -14,7 +14,7 @@ Today's objective is to go beyond, the following topics will be covered:
 
 The environment you will work with in this activity is a fictional ecommerce app, Storedog, deployed using Docker. The app is built using a Rails framework along with Python Flask microservices for handling coupon codes and ad services:
 
-![Application Dashboard](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-2/images/dashboard.png)
+![Application Dashboard](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-3/images/app_homepage.png)
 
 When you are ready to continue, click **Start Scenario**.
 
