@@ -4,9 +4,9 @@ sleep 1
 
 touch ~/.bashrc
 
-echo "alias app_start='docker-compose -f docker-compose-fixed-instrumented-no-log.yml up -d'">> ~/.bashrc
-echo "alias app_start_with_logs='docker-compose -f docker-compose-fixed-instrumented-no-log.yml up'">> ~/.bashrc
-echo "alias app_stop='docker-compose -f docker-compose-fixed-instrumented-no-log.yml stop && docker-compose -f docker-compose-fixed-instrumented-no-log.yml rm -f'">> ~/.bashrc
+echo "alias app_start='docker-compose -f docker-compose-fixed-instrumented-with-log.yml up -d'">> ~/.bashrc
+echo "alias app_start_with_logs='docker-compose -f docker-compose-fixed-instrumented-with-log.yml up'">> ~/.bashrc
+echo "alias app_stop='docker-compose -f docker-compose-fixed-instrumented-with-log.yml stop && docker-compose -f docker-compose-fixed-instrumented-with-log.yml rm -f'">> ~/.bashrc
 
 echo "alias app_restart='app_stop && app_start'">> ~/.bashrc
 

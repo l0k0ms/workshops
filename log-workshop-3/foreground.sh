@@ -2,9 +2,9 @@
 
 export POSTGRES_USER=postgres
 export POSTGRES_PASSWORD=postgres
-# while [ ! -f /root/app-files/docker-compose-files/docker-compose-fixed-instrumented-no-log.yml ]; do sleep 2; done
+# while [ ! -f /root/app-files/docker-compose-files/docker-compose-fixed-instrumented-with-log.yml ]; do sleep 2; done
 
-until [ -f /root/app-files/docker-compose-files/docker-compose-fixed-instrumented-no-log.yml ]; do sleep 2; done
+until [ -f /root/app-files/docker-compose-files/docker-compose-fixed-instrumented-with-log.yml ]; do sleep 2; done
 
 source ~/.bashrc
 

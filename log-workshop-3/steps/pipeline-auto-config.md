@@ -8,7 +8,7 @@ Before we move beyond the collection note that [some logs are not properly wrapp
 
 In order to fix this we need to configure our container annotations with a [log processing rule](https://docs.datadoghq.com/agent/logs/advanced_log_collection?tab=docker#multi-line-aggregation).
 
-In the `docker-compose-files/docker-compose-fixed-instrumented-no-log.yml` file edit the `labels` parameter for the `frontend` container with the following configuration:
+In the `docker-compose-files/docker-compose-fixed-instrumented-with-log.yml` file edit the `labels` parameter for the `frontend` container with the following configuration:
 
 ```yaml
     labels:
