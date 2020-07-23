@@ -12,7 +12,7 @@ clear
 
 cd /root/app-files/docker-compose-files
 
-# clear
+clear
 # app_start
 # clear
 # prep-environment

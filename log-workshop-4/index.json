@@ -55,7 +55,32 @@
             {
               "title": "Break",
               "text": "steps/break.md"
+            },
+            {
+              "title": "Real app example",
+              "text": "steps/real-app-example.md"
+            },
+            {
+              "title": "Real app log collection",
+              "text": "steps/real-app-log-collection.md"
+            },
+            {
+              "title": "Real app Tagging",
+              "text": "steps/real-app-tagging.md"
+            },
+            {
+              "title": "Real app: integrations setup",
+              "text": "steps/real-app-integration-setup.md"
+            },
+            {
+              "title": "Real app container-overview",
+              "text": "steps/real-app-container-overview.md"
+            },
+            {
+              "title": "Real app: Trace and log correlation",
+              "text": "steps/real-app-trace-log.md"
             }
+
         ],
         "intro": {
             "text": "steps/intro.md",

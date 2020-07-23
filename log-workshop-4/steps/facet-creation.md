@@ -10,4 +10,3 @@ For this:
 
 2. Use those facet to filter your log poll
 3. Create an analysis that displays the relative share of request per status code.
-
