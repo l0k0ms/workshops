@@ -23,6 +23,10 @@
             {
                 "title": "Container overview",
                 "text": "steps/container-overview.md"
+            },
+            {
+                "title": "Pipeline Auto-configuration",
+                "text": "steps/pipeline-auto-config.md"
             }
         ],
         "intro": {
