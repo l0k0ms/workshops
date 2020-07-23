@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sleep 2
+sleep 1
 
 touch ~/.bashrc
 
@@ -8,7 +8,8 @@ echo "alias app_start='docker-compose -f docker-compose-fixed-instrumented-no-lo
 echo "alias app_start_with_logs='docker-compose -f docker-compose-fixed-instrumented-no-log.yml up'">> ~/.bashrc
 echo "alias app_stop='docker-compose -f docker-compose-fixed-instrumented-no-log.yml stop && docker-compose -f docker-compose-fixed-instrumented-no-log.yml rm -f'">> ~/.bashrc
 
-echo "\n\n\n\n\n\n" | wall -n
+echo "alias app_restart='app_stop && app_start'">> ~/.bashrc
+
 echo "Initialization, please wait" | wall -n
 
 mkdir /root/app-files

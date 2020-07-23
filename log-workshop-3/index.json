@@ -15,6 +15,14 @@
             {
                 "title": "Tagging is the key",
                 "text": "steps/tagging-overview.md"
+            },
+            {
+                "title": "Enabling integrations",
+                "text": "steps/integration-setup.md"
+            },
+            {
+                "title": "Container overview",
+                "text": "steps/container-overview.md"
             }
         ],
         "intro": {

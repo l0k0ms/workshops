@@ -52,4 +52,4 @@ The following configuration lines in your `docker-compose.yml` file at the root 
 | DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true        | env variable | Enables log collection for all containers       |
 | /opt/datadog-agent/run:/opt/datadog-agent/run:rw | volume       | Used to store pointers on container current log |
 
-[Refer to the Datadog Agent log collection documentation to learn more.](https://docs.datadoghq.com/agent/docker/log/)
+[Refer to the Datadog Agent log collection documentation to learn more.](https://docs.datadoghq.com/agent/docker/logs)
