@@ -57,10 +57,6 @@
               "text": "steps/break.md"
             },
             {
-              "title": "Real app example",
-              "text": "steps/real-app-example.md"
-            },
-            {
               "title": "Real app log collection",
               "text": "steps/real-app-log-collection.md"
             },
