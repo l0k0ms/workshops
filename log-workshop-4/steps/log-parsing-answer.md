@@ -1,3 +1,5 @@
+### Grok parser configuration
+
 Your grok parser should look like this:
 
 ![Grok config](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/grok-config.png)
@@ -22,6 +24,9 @@ With the following explanation:
 | 2345                                                                  | %{integer:network.bytes_written}          |
 | http://www.dynamicmodels.net/cross-platform/open-source/revolutionary | %{notSpace:http.referer}                  |
 | Mozilla/5.0 (X11; Linux i686; rv:5.0) Gecko/2002-04-12 Firefox/37.0   | %{data:http.useragent}                    |
+
+
+### Results
 
 If you go back in your explorer view you should see your `flog` being properly parsed now:
 

@@ -11,22 +11,22 @@ The first thing we want to do is to create a pipeline for our logs to make sure 
 
     Web access information:
 
-    * The status code: `http.status_code`
-    * The referer; `http.referer`
-    * The auth: `http.auth`
-    * The user-agent: `http.useragent`
-    * The method: `http.method`
-    * The URL: `http.url`
-    * The HTTP version in use: `http.version`
+      * The status code: `http.status_code`
+      * The referer; `http.referer`
+      * The auth: `http.auth`
+      * The user-agent: `http.useragent`
+      * The method: `http.method`
+      * The URL: `http.url`
+      * The HTTP version in use: `http.version`
 
     Network information:
 
-    * The amount of bytes written: `network.bytes_written`
-    * The IP that made the request: `network.client.ip`
+      * The amount of bytes written: `network.bytes_written`
+      * The IP that made the request: `network.client.ip`
 
     Global log information
 
-    * The date of the request `date_access`
+      * The date of the request `date_access`
 
 Those attributes follow the [Datadog Standard attributes Naming convention](https://docs.datadoghq.com/logs/processing/attributes_naming_convention/#default-standard-attribute-list).
 
