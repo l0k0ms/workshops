@@ -28,6 +28,6 @@ echo "Pulling containers" | wall -n
 
 docker-compose pull
 
-./gor --input-file-loop --input-file requests_0.gor --output-http "http://localhost:3000" >> /dev/null 2>&1
-
 cd /root/app-files/docker-compose-files
+
+source ~/.bashrc
