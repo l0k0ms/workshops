@@ -22,12 +22,8 @@ git clone https://github.com/DataDog/ecommerce-workshop /root/app-files
 
 echo "Cloning Application repository: Successful " | wall -n
 
-cd /root/app-files
-
 echo "Pulling containers" | wall -n
 
 docker-compose pull
-
-cd /root/app-files/docker-compose-files
 
 source ~/.bashrc
