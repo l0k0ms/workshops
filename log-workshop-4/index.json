@@ -46,11 +46,11 @@
             },
             {
               "title": "Management as in Log Management",
-              "text": "steps/monitor-creation.md"
+              "text": "steps/log-management.md"
             },
             {
               "title": "[ANSWER] Management as in Log Management",
-              "text": "steps/monitor-creation-answer.md"
+              "text": "steps/log-management-answer.md"
             },
             {
               "title": "Break",
