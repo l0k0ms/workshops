@@ -18,7 +18,7 @@ echo "Workshop folder created !" | wall -n
 
 echo "Cloning Application repository !" | wall -n
 
-git clone https://github.com/l0k0ms/ecommerce-workshop /root/app-files
+git clone https://github.com/DataDog/ecommerce-workshop /root/app-files
 
 echo "Cloning Application repository: Successful " | wall -n
 
