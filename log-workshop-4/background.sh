@@ -24,8 +24,6 @@ echo "Cloning Application repository: Successful " | wall -n
 
 cd /root/app-files
 
-git checkout gus/log-workshop
-
 echo "Pulling containers" | wall -n
 
 docker-compose pull

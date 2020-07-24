@@ -5,7 +5,7 @@
     "difficulty": "Beginner",
     "details": {
         "steps": [{
-                "title": "Collecting logs",
+                "title": "Running the Agent",
                 "text": "steps/running-the-agent.md"
             },
             {

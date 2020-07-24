@@ -1,5 +1,7 @@
 
-This is the expected configuration: https://a.cl.ly/E0uzx1D6
+This is the expected configuration:
+
+![Grok config](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/grok-config.png)
 
 The rule used is the following:
 
@@ -16,3 +18,7 @@ With the following explanation:
 | GET                         | %{word:http.method}                       |
 | /simulate_sensors           | %{notSpace:http.url}                      |
 | 200                         | %{number:http.status_code}                |
+
+If you go back in your explorer view you should see your `flog` being properly parsed now:
+
+![Log parsed](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/log-parsed.png)
