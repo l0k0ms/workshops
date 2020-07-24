@@ -6,12 +6,10 @@ An access log by definition doesn't have any status attached, but there is a way
 
 1. Create a category processor in your pipeline, and add four categories to it:
 
-    | Query                          | Value   |
-    | ---                            | ---     |
-    | @http.status_code:[200 TO 299] | ok      |
-    | @http.status_code:[300 TO 399] | notice  |
-    | @http.status_code:[400 TO 499] | warning |
-    | @http.status_code:[500 TO 599] | error   |
+    * `@http.status_code:[200 TO 299]`:  `ok`
+    * `@http.status_code:[300 TO 399]`:  `notice`
+    * `@http.status_code:[400 TO 499]`:  `warning`
+    * `@http.status_code:[500 TO 599]`:  `error`
 
     The value should be assgined to a new attribute: `http.status_code_category`
 
