@@ -1,12 +1,12 @@
 We saw how to manipulate your logs and how you could monitor them, but in Log management there is the word **management**.
 
-The whole idea of Datadog Logging Without Limits is that it's not because a log is sent to Datadog, a log is "ingested", a log is "processed" that you necesseraly want to index it for search/analytics/monitor use-cases.
+The whole idea of Datadog Logging Without Limits is that: it's not because a log is sent to Datadog, a log is "ingested", a log is "processed" that you necesseraly want to index it for search/analytics/monitor use-cases.
 
 **Ingesting and indexing are two different things.**
 
 When ingesting a log in Datadog you can:
 
-* Index it to allow search, analytics and monitors
+* Index it to allow search, analytics, and monitors
 
 **AND/OR:**
 

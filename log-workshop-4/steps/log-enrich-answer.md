@@ -2,7 +2,7 @@
 
 ## Processors configuration
 
-Find below the configuration of all the processors
+Find below the configuration of all the processors.
 
 ### Category processor
 

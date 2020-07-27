@@ -1,4 +1,4 @@
-Now that the log are parsed and each value can be manipulated, let's push our processing further by enriching our logs.
+Now that the log are parsed and each value could already be manipulated, let's push our processing further by enriching our logs.
 
 The goal of this exercise is to assign a severity based on the status code of the log. An access log by definition doesn't have any status attached, but there is a way to assign your log a status depending on the value of the `http.status_code` attribute.
 

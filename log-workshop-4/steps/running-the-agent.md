@@ -20,7 +20,7 @@ To run the Agent:
 
 * Reach out to the Docker Agent installation command, and copy past it in the terminal on the right of this panel.
 
-![log getting started](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/logs-gs.png)
+    ![log getting started](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/logs-gs.png)
 
 This should have installed the Agent and log collection is enabled, check that the Agent is running with `docker ps`{{execute}}
 
