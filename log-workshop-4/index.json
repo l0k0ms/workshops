@@ -1,6 +1,6 @@
 {
-    "title": "Datadog Log Workshop 4",
-    "description": "Workshop for Datadog Log Management",
+    "title": "Beyond Collection: Building Observability with Logs",
+    "description": "Your logs are key to enhancing APM traces, providing metrics, detecting potential security threats, and maintaining regulatory compliance. Getting the full value from your logs requires more than just collecting and analyzing log lines.",
     "time": "2 hours 30 mins",
     "difficulty": "Beginner",
     "details": {
@@ -107,7 +107,8 @@
           }
     },
     "environment": {
-        "uilayout": "editor-terminal",
+        "uilayout": "vscode-terminal-split",
+        "showide": true,
         "uieditorpath": "/root/app-files",
         "hideHiddenFiles": true,
         "exclusionPatterns": ["**/store-frontend/tmp/*", "**/store-frontend/log/*"],
