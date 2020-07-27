@@ -107,9 +107,9 @@
           }
     },
     "environment": {
-        "uilayout": "vscode-terminal-split",
+        "uilayout": "editor-terminal",
         "showide": true,
-        "uieditorpath": "/root/app-files",
+        "uieditorpath": "/root/app-files/",
         "hideHiddenFiles": true,
         "exclusionPatterns": ["**/store-frontend/tmp/*", "**/store-frontend/log/*"],
         "showdashboard": true,
