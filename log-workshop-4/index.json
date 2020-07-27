@@ -4,7 +4,8 @@
     "time": "2 hours 30 mins",
     "difficulty": "Beginner",
     "details": {
-        "steps": [{
+        "steps": [
+            {
                 "title": "Running the Agent",
                 "text": "steps/running-the-agent.md"
             },
@@ -25,58 +26,57 @@
                 "text": "steps/log-enrich.md"
             },
             {
-              "title": "[ANSWER] Enriching your logs",
-              "text": "steps/log-enrich-answer.md"
+                "title": "[ANSWER] Enriching your logs",
+                "text": "steps/log-enrich-answer.md"
             },
             {
-              "title": "Facets creation and manipulation",
-              "text": "steps/facet-creation.md"
+                "title": "Facets creation and manipulation",
+                "text": "steps/facet-creation.md"
             },
             {
-              "title": "[ANSWER] Facets creation and manipulation",
-              "text": "steps/facet-creation-answer.md"
+                "title": "[ANSWER] Facets creation and manipulation",
+                "text": "steps/facet-creation-answer.md"
             },
             {
-              "title": "Monitor creation",
-              "text": "steps/monitor-creation.md"
+                "title": "Monitor creation",
+                "text": "steps/monitor-creation.md"
             },
             {
-              "title": "[ANSWER] Monitor creation",
-              "text": "steps/monitor-creation-answer.md"
+                "title": "[ANSWER] Monitor creation",
+                "text": "steps/monitor-creation-answer.md"
             },
             {
-              "title": "Management as in Log Management",
-              "text": "steps/log-management.md"
+                "title": "Management as in Log Management",
+                "text": "steps/log-management.md"
             },
             {
-              "title": "[ANSWER] Management as in Log Management",
-              "text": "steps/log-management-answer.md"
+                "title": "[ANSWER] Management as in Log Management",
+                "text": "steps/log-management-answer.md"
             },
             {
-              "title": "Break",
-              "text": "steps/break.md"
+                "title": "Break",
+                "text": "steps/break.md"
             },
             {
-              "title": "Real app log collection",
-              "text": "steps/real-app-log-collection.md"
+                "title": "Real app log collection",
+                "text": "steps/real-app-log-collection.md"
             },
             {
-              "title": "Real app Tagging",
-              "text": "steps/real-app-tagging.md"
+                "title": "Real app Tagging",
+                "text": "steps/real-app-tagging.md"
             },
             {
-              "title": "Real app: integrations setup",
-              "text": "steps/real-app-integration-setup.md"
+                "title": "Real app: integrations setup",
+                "text": "steps/real-app-integration-setup.md"
             },
             {
-              "title": "Real app container-overview",
-              "text": "steps/real-app-container-overview.md"
+                "title": "Real app container-overview",
+                "text": "steps/real-app-container-overview.md"
             },
             {
-              "title": "Real app: Trace and log correlation",
-              "text": "steps/real-app-trace-log.md"
+                "title": "Real app: Trace and log correlation",
+                "text": "steps/real-app-trace-log.md"
             }
-
         ],
         "intro": {
             "text": "steps/intro.md",
@@ -88,34 +88,42 @@
         },
         "assets": {
             "host01": [
-              {
-                "file": "grademe",
-                "target": "/usr/local/bin/",
-                "chmod": "+x"
-              },
-              {
-                "file": "prep-environment",
-                "target": "/usr/local/bin/",
-                "chmod": "+x"
-              },
-              {
-                "file": "check-file",
-                "target": "/usr/local/bin/",
-                "chmod": "+x"
-              }
+                {
+                    "file": "grademe",
+                    "target": "/usr/local/bin/",
+                    "chmod": "+x"
+                },
+                {
+                    "file": "prep-environment",
+                    "target": "/usr/local/bin/",
+                    "chmod": "+x"
+                },
+                {
+                    "file": "check-file",
+                    "target": "/usr/local/bin/",
+                    "chmod": "+x"
+                }
             ]
-          }
+        }
     },
     "environment": {
-      "uilayout": "terminal",
+        "uilayout": "terminal",
         "uieditorpath": "/root/app-files/",
         "idePort": 23000,
         "showide": true,
         "hideHiddenFiles": true,
-        "exclusionPatterns": ["**/store-frontend/tmp/*", "**/store-frontend/log/*"],
+        "exclusionPatterns": [
+            "**/store-frontend/tmp/*",
+            "**/store-frontend/log/*"
+        ],
         "showdashboard": true,
-        "dashboards": [{"name": "storedog", "port": 3000}]
-      },
+        "dashboards": [
+            {
+                "name": "storedog",
+                "port": 3000
+            }
+        ]
+    },
     "backend": {
         "imageid": "ubuntu:2004"
     }
