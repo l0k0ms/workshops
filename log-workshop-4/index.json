@@ -6,23 +6,31 @@
     "details": {
         "steps": [
             {
-                "title": "Running the Agent",
+                "title": "Logging best practices",
+                "text": "steps/prez-1.md"
+            },
+            {
+                "title": "Log Management 101",
                 "text": "steps/running-the-agent.md"
             },
             {
-                "title": "Checking logs",
+                "title": "Log Management 101",
                 "text": "steps/checking-logs.md"
             },
             {
-                "title": "Parsing our first logs",
-                "text": "steps/log-parsing.md"
+                "title": "Beyond collection: Processing",
+                "text": "steps/log-processing.md"
             },
             {
-                "title": "[ANSWER] Parsing our first logs",
+              "title": "[EXERCISE] Parsing",
+              "text": "steps/log-parsing.md"
+            },
+            {
+                "title": "[ANSWER] Parsing",
                 "text": "steps/log-parsing-answer.md"
             },
             {
-                "title": "Enriching your logs",
+                "title": "[EXERCISE] Enriching your logs",
                 "text": "steps/log-enrich.md"
             },
             {
@@ -30,7 +38,15 @@
                 "text": "steps/log-enrich-answer.md"
             },
             {
-                "title": "Facets creation and manipulation",
+              "title": "Beyond collection: Processing",
+              "text": "steps/log-processing-2.md"
+            },
+            {
+              "title": "Beyond collection: Manipulation",
+              "text": "steps/log-manipulation.md"
+            },
+            {
+                "title": "[EXERCISE] Facets creation and manipulation",
                 "text": "steps/facet-creation.md"
             },
             {
@@ -38,7 +54,11 @@
                 "text": "steps/facet-creation-answer.md"
             },
             {
-                "title": "Monitor creation",
+              "title": "Beyond collection: Monitoring",
+              "text": "steps/log-monitoring.md"
+            },
+            {
+                "title": "[EXERCISE] Monitor creation",
                 "text": "steps/monitor-creation.md"
             },
             {
@@ -46,11 +66,15 @@
                 "text": "steps/monitor-creation-answer.md"
             },
             {
-                "title": "Management as in Log Management",
+                "title": "Beyond collection: Management as in Log Management",
                 "text": "steps/log-management.md"
             },
             {
-                "title": "[ANSWER] Management as in Log Management",
+              "title": "[EXERCISE] Logging without Limits",
+              "text": "steps/log-management-exercise.md"
+            },
+            {
+                "title": "[ANSWER] Logging without Limits",
                 "text": "steps/log-management-answer.md"
             },
             {

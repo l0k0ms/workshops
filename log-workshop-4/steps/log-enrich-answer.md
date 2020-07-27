@@ -1,3 +1,9 @@
+**If you reached this page without doing the exercise from the previous step, your are cheating ( ͡° ͜ʖ ͡°)**
+
+## Processors configuration
+
+Find below the configuration of all the processors
+
 ### Category processor
 
 The configuration of the category processor should look like this:
@@ -28,17 +34,8 @@ The configuration of the message remapper processor should look like this:
 
 ![message-remapper](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/message-remapper.png)
 
-### Pipeline overview
+## Pipeline overview
 
 Overall your pipeline should look like this:
 
 ![pipeline-overview-2](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/pipeline-overview-2.png)
-
-### Final result
-
-If you go back in [your log explorer view](https://app.datadoghq.com/logs) logs should now be properly parsed and have the right status assigned to them:
-
-![log-parsed-2](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/log-parsed-2.png)
-
-As a bonus, because the message of your log is now properly formated, the pattern feature is more accurate:
-![pattern_2](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/pattern_2.png)

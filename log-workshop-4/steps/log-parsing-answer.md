@@ -1,10 +1,10 @@
-### Grok parser configuration
+**If you reached this page without doing the exercise from the previous step, your are cheating ( ͡° ͜ʖ ͡°)**
 
 Your grok parser should look like this:
 
 ![Grok config](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/grok-config.png)
 
-The rule used is the following:
+The rule used is the following, copy past it in your grok parser to make sure to be correctly set for the rest of the workshop:
 
 ```text
 rule %{ip:network.client.ip} %{notSpace:http.ident:nullIf("-")} %{notSpace:http.auth:nullIf("-")} \[%{date("dd/MMM/yyyy:HH:mm:ss Z"):date}\] "%{word:http.method} %{notSpace:http.url} HTTP\/%{number:http.version}" %{number:http.status_code} %{integer:network.bytes_written} "%{notSpace:http.referer}" "%{data:http.useragent}"
@@ -24,9 +24,3 @@ With the following explanation:
 | 2345                                                                  | %{integer:network.bytes_written}          |
 | http://www.dynamicmodels.net/cross-platform/open-source/revolutionary | %{notSpace:http.referer}                  |
 | Mozilla/5.0 (X11; Linux i686; rv:5.0) Gecko/2002-04-12 Firefox/37.0   | %{data:http.useragent}                    |
-
-### Results
-
-If you go back in your explorer view you should see your `flog` being properly parsed now:
-
-![Log parsed](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/log-parsed.png)

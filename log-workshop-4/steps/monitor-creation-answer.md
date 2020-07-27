@@ -1,3 +1,5 @@
+**If you reached this page without doing the exercise from the previous step, your are cheating ( ͡° ͜ʖ ͡°)**
+
 This is what your query should look like:
 
 ![Query for monitor](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/query-for-monitor.png)

@@ -1,7 +1,8 @@
+Time for your first exersise, the goal here is to parse the collected Apache log in order to extract all usefull information and assign them to a standard attribute.
 
-The first thing we want to do is to create a pipeline for our logs to make sure our parsing strategy will only apply to those log.
+*Pro tip: To help you in this exersie, check the exemples from the [Datadog Log Parsing documentation](https://docs.datadoghq.com/logs/processing/parsing/).*
 
-### Exercise
+Exercise:
 
 1. Go in the [log configuration page](https://app.datadoghq.com/logs/pipelines).
 2. Create a first [pipeline](https://docs.datadoghq.com/logs/processing/pipelines/) with a filter `service:flog`.
@@ -28,6 +29,4 @@ The first thing we want to do is to create a pipeline for our logs to make sure 
 
       * The date of the request `date_access`
 
-Those attributes follow the [Datadog Standard attributes Naming convention](https://docs.datadoghq.com/logs/processing/attributes_naming_convention/#default-standard-attribute-list).
-
-To help you parse this log, see the [Datadog Parsing documentation](https://docs.datadoghq.com/logs/processing/parsing/)
+**Note**: Those attributes follow the [Datadog Standard attributes Naming convention](https://docs.datadoghq.com/logs/processing/attributes_naming_convention/#default-standard-attribute-list).
