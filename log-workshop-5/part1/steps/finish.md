@@ -1,1 +1,0 @@
-That feeling when you've finished the workshop ＼(＾O＾)／

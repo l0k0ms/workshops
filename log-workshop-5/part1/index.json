@@ -59,9 +59,6 @@
         ],
         "intro": {
             "text": "steps/intro.md"
-        },
-        "finish": {
-            "text": "steps/finish.md"
         }
     },
     "environment": {
