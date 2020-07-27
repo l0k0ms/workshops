@@ -1,6 +1,6 @@
 {
     "title": "Beyond Collection: Building Observability with Logs",
-    "description": "Your logs are key to enhancing APM traces, providing metrics, detecting potential security threats, and maintaining regulatory compliance. Getting the full value from your logs requires more than just collecting and analyzing log lines.",
+    "description": "Learning all about the word Management in Log Management.",
     "time": "2 hours 30 mins",
     "difficulty": "Beginner",
     "details": {
@@ -108,7 +108,7 @@
     },
     "environment": {
       "uilayout": "vscode-terminal-split",
-        "uieditorpath": "/root/app-files/docker-compose-files",
+        "uieditorpath": "/root/app-files/",
         "showide": true,
         "hideHiddenFiles": true,
         "exclusionPatterns": ["**/store-frontend/tmp/*", "**/store-frontend/log/*"],
