@@ -107,7 +107,7 @@
           }
     },
     "environment": {
-      "uilayout": "vscode-terminal-split",
+      "uilayout": "terminal",
         "uieditorpath": "/root/app-files/",
         "showide": true,
         "hideHiddenFiles": true,
