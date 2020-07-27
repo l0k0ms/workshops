@@ -1,4 +1,4 @@
-# Part 1 - Beyond log collection, implementing log management best practices.
+# Part 1 - Beyond log collection, implementing log management best practices
 
 ![dd_logo](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/dd_logo.png)
 
