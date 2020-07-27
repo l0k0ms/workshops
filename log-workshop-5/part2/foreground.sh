@@ -11,3 +11,7 @@ cd /root/app-files/docker-compose-files
 source ~/.bashrc
 
 clear
+
+echo "Starting application"
+
+app_start
