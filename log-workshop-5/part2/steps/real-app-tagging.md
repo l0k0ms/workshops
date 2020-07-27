@@ -35,7 +35,7 @@ services:
   agent:
     # (...)
     labels:
-      com.datadoghq.ad.logs: '[{"source": "datadog-agent", "service": "agent"}]'
+      com.datadoghq.ad.logs: '[{"source": "agent", "service": "agent"}]'
   discounts:
     # (...)
     labels:
@@ -54,5 +54,5 @@ services:
   db:
     # (...)
     labels:
-      com.datadoghq.ad.logs: '[{"source": "postgres", "service": "postgres"}]'
+      com.datadoghq.ad.logs: '[{"source": "postgresql", "service": "postgres"}]'
 ```

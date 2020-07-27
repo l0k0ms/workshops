@@ -1,4 +1,4 @@
-# Beyond Collection: Building Observability with Logs - Part 2
+# Part 2 - Beyond log collection, reducing MTTR with logs
 
 In this scenario we are going to instrument a real application to demonstrate how logs can bring context to your metrics and traces.
 
