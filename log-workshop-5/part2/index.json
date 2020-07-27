@@ -1,0 +1,69 @@
+{
+    "title": "Part 2 - Beyond Collection: Building Observability with Logs",
+    "description": "Your logs are key to enhancing APM traces, providing metrics, detecting potential security threats, and maintaining regulatory compliance. Getting the full value from your logs requires more than just collecting and analyzing log lines.",
+    "time": "2 hours 30 mins",
+    "difficulty": "Beginner",
+    "details": {
+        "steps": [
+            {
+              "title": "Real app log collection",
+              "text": "steps/real-app-log-collection.md"
+            },
+            {
+              "title": "Real app Tagging",
+              "text": "steps/real-app-tagging.md"
+            },
+            {
+              "title": "Real app: integrations setup",
+              "text": "steps/real-app-integration-setup.md"
+            },
+            {
+              "title": "Real app container-overview",
+              "text": "steps/real-app-container-overview.md"
+            },
+            {
+              "title": "Real app: Trace and log correlation",
+              "text": "steps/real-app-trace-log.md"
+            }
+
+        ],
+        "intro": {
+            "text": "steps/intro.md",
+            "code": "foreground.sh",
+            "courseData": "background.sh"
+        },
+        "finish": {
+            "text": "steps/finish.md"
+        },
+        "assets": {
+            "host01": [
+              {
+                "file": "grademe",
+                "target": "/usr/local/bin/",
+                "chmod": "+x"
+              },
+              {
+                "file": "prep-environment",
+                "target": "/usr/local/bin/",
+                "chmod": "+x"
+              },
+              {
+                "file": "check-file",
+                "target": "/usr/local/bin/",
+                "chmod": "+x"
+              }
+            ]
+          }
+    },
+    "environment": {
+        "uilayout": "editor-terminal",
+        "uieditorpath": "/root/app-files/docker-compose-files",
+        "hideHiddenFiles": true,
+        "exclusionPatterns": ["**/store-frontend/tmp/*", "**/store-frontend/log/*"],
+        "showdashboard": true,
+        "dashboards": [{"name": "storedog", "port": 3000}]
+      },
+    "backend": {
+        "imageid": "datadog-ecommerce-observability"
+    }
+}

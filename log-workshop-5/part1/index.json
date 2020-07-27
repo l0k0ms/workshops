@@ -1,0 +1,73 @@
+{
+    "title": "Beyond Collection: Building Observability with Logs",
+    "description": "Your logs are key to enhancing APM traces, providing metrics, detecting potential security threats, and maintaining regulatory compliance. Getting the full value from your logs requires more than just collecting and analyzing log lines.",
+    "time": "2 hours 30 mins",
+    "difficulty": "Beginner",
+    "details": {
+        "steps": [{
+                "title": "Running the Agent",
+                "text": "steps/running-the-agent.md"
+            },
+            {
+                "title": "Checking logs",
+                "text": "steps/checking-logs.md"
+            },
+            {
+                "title": "Parsing our first logs",
+                "text": "steps/log-parsing.md"
+            },
+            {
+                "title": "[ANSWER] Parsing our first logs",
+                "text": "steps/log-parsing-answer.md"
+            },
+            {
+                "title": "Enriching your logs",
+                "text": "steps/log-enrich.md"
+            },
+            {
+              "title": "[ANSWER] Enriching your logs",
+              "text": "steps/log-enrich-answer.md"
+            },
+            {
+              "title": "Facets creation and manipulation",
+              "text": "steps/facet-creation.md"
+            },
+            {
+              "title": "[ANSWER] Facets creation and manipulation",
+              "text": "steps/facet-creation-answer.md"
+            },
+            {
+              "title": "Monitor creation",
+              "text": "steps/monitor-creation.md"
+            },
+            {
+              "title": "[ANSWER] Monitor creation",
+              "text": "steps/monitor-creation-answer.md"
+            },
+            {
+              "title": "Management as in Log Management",
+              "text": "steps/log-management.md"
+            },
+            {
+              "title": "[ANSWER] Management as in Log Management",
+              "text": "steps/log-management-answer.md"
+            },
+            {
+              "title": "Break",
+              "text": "steps/break.md"
+            }
+        ],
+        "intro": {
+            "text": "steps/intro.md"
+        },
+        "finish": {
+            "text": "steps/finish.md"
+        }
+    },
+    "environment": {
+        "uilayout": "terminal"
+      },
+    "backend": {
+        "imageid": "datadog-ecommerce-observability"
+    }
+}

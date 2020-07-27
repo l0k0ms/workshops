@@ -1,0 +1,21 @@
+{
+    "title": "Beyond Collection: Building Observability with Logs",
+    "description": "",
+    "icon": "fa-katacoda",
+    "courses": [
+        {
+            "pathway_id": "l0k0ms",
+            "course_id": "log-workshop-5",
+            "id": "part1",
+            "title": "This is part 1",
+            "description": "Tagging for Kubernetes"
+        },
+        {
+            "pathway_id": "datadog/tagging",
+            "course_id": "log-workshop-5",
+            "id": "part2",
+            "title": "Part 2",
+            "description": "This is part 2"
+        }
+    ]
+}
