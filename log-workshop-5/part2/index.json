@@ -5,6 +5,10 @@
     "difficulty": "Beginner",
     "details": {
         "steps": [
+          {
+            "title": "Real app launch",
+            "text": "steps/real-app-start.md"
+          },
             {
               "title": "Real app log collection",
               "text": "steps/real-app-log-collection.md"
