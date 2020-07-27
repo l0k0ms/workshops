@@ -109,6 +109,7 @@
     "environment": {
       "uilayout": "terminal",
         "uieditorpath": "/root/app-files/",
+        "idePort": 23000,
         "showide": true,
         "hideHiddenFiles": true,
         "exclusionPatterns": ["**/store-frontend/tmp/*", "**/store-frontend/log/*"],
