@@ -107,7 +107,7 @@
           }
     },
     "environment": {
-        "uilayout": "terminal",
+        "uilayout": "editor-terminal",
         "uieditorpath": "/root/app-files/docker-compose-files",
         "hideHiddenFiles": true,
         "exclusionPatterns": ["**/store-frontend/tmp/*", "**/store-frontend/log/*"],
