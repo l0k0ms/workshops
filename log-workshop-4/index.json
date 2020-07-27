@@ -107,8 +107,9 @@
           }
     },
     "environment": {
-        "uilayout": "editor-terminal",
+      "uilayout": "vscode-terminal-split",
         "uieditorpath": "/root/app-files/docker-compose-files",
+        "showide": true,
         "hideHiddenFiles": true,
         "exclusionPatterns": ["**/store-frontend/tmp/*", "**/store-frontend/log/*"],
         "showdashboard": true,
