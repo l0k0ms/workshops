@@ -149,6 +149,6 @@
         ]
     },
     "backend": {
-        "imageid": "ubuntu:2004"
+        "imageid": "datadog-ubuntu"
     }
 }
