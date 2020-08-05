@@ -14,9 +14,4 @@ Exercise:
     The value should be assgined to a new attribute: `http.status_code_category`
 
 2. Remap the newly created attribute as the status of the log thanks to the [Status Remapper](https://docs.datadoghq.com/logs/processing/processors/#log-status-remapper).
-3. Create [an URL parser](https://docs.datadoghq.com/logs/processing/processors/#url-parser) to extract all query parameters from your requested URL in `http.url` and pass them into `http.url_details`.
-4. Create a temporary message in the attribute `msg_tmp` thanks to the [String Builder processor](https://docs.datadoghq.com/logs/processing/processors/#string-builder-processor) for your log that includes:
 
-    `Request %{http.method} %{http.url_details.path} with response %{http.status_code}`
-
-5. Remap this temporary message in `msg_tmp` as the official log message with a [Message remapper](https://docs.datadoghq.com/logs/processing/processors/#log-message-remapper).

@@ -30,12 +30,28 @@
                 "text": "steps/log-parsing-answer.md"
             },
             {
-                "title": "[EXERCISE] Enriching your logs",
-                "text": "steps/log-enrich.md"
+                "title": "[EXERCISE] Enriching your logs - Severity",
+                "text": "steps/log-enrich-severity.md"
             },
             {
-                "title": "[ANSWER] Enriching your logs",
-                "text": "steps/log-enrich-answer.md"
+                "title": "[ANSWER] Enriching your logs - Severity",
+                "text": "steps/log-enrich-severity-answer.md"
+            },
+            {
+                "title": "[EXERCISE] Enriching your logs - URL and UserAgent",
+                "text": "steps/log-enrich-url-ua.md"
+            },
+            {
+                "title": "[ANSWER] Enriching your logs - URL and UserAgent",
+                "text": "steps/log-enrich-url-ua-answer.md"
+            },
+            {
+                "title": "[EXERCISE] Enriching your logs - Message",
+                "text": "steps/log-enrich-new-message.md"
+            },
+            {
+                "title": "[ANSWER] Enriching your logs- Message",
+                "text": "steps/log-enrich-answer-new-message.md"
             },
             {
               "title": "Beyond collection: Processing",
@@ -153,6 +169,6 @@
         ]
     },
     "backend": {
-        "imageid": "datadog-ubuntu"
+        "imageid": "datadog-base-v1"
     }
 }

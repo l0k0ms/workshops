@@ -1,3 +1,11 @@
+## Pipeline overview
+
+If you followed all previous exercise, your pipeline should look like this:
+
+![pipeline-overview-2](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/pipeline-overview-2.png)
+
+Be aware that processors within a pipeline are applied sequentially so **order does matter**.
+
 ## Final result
 
 Go back in [your log explorer view](https://app.datadoghq.com/logs), your logs should now be properly parsed and have the right status assigned to them:

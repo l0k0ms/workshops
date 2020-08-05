@@ -12,4 +12,4 @@ You should see this page:
 
 Refresh the Application page, click around to begin generating metrics, APM traces, and logs for your application.
 
-Alternatively you can click on `generating_traffic`{{execute}} to generate traffic constently.
+Alternatively you can click on `generating_traffic`{{execute}} to generate traffic constantly.
