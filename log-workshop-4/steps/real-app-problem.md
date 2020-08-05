@@ -2,4 +2,4 @@ Let's finish by investigating a real problem that could happen in your environme
 
 `creating_issue`{{execute}}
 
-And try to understand what happenend with the APM service overview, the log explorer, and the docker dashboard.
+And try to understand what happened with the APM service overview, the log explorer, and the docker dashboard.

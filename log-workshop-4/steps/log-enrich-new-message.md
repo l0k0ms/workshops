@@ -1,4 +1,4 @@
-After enriching the log, we can now move to an advanced processing capabilities that would allow to better leverage the pattern feature of the log explorer.
+After enriching the log, we can now move to an advanced processing capability that will allow you to better leverage the pattern feature of the log explorer.
 
 Since the pattern feature is based on a log status, service, and message, the goal here is to refactor this message in order to keep only useful information for clustering.
 

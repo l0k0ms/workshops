@@ -2,7 +2,7 @@
 
 Datadog is a Saas product, meaning if you want to see your logs in Datadog you need to collect them from your hosts, containers, applications, browsers, and serverless functions and send them to Datadog.
 
-Details on how to collect logs from your enviromnent can be seen:
+Details on how to collect logs from your environment can be seen:
 
 * [In the Datadog Log collection documentation.](https://docs.datadoghq.com/logs/log_collection/?tab=http)
 * [In the Getting started section of your Datadog application.](https://app.datadoghq.com/logs/onboarding)

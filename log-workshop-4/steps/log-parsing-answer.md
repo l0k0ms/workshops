@@ -4,10 +4,10 @@ Your grok parser should look like this:
 
 ![Grok config](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/grok-config.png)
 
-The rule used is the following, copy past it in your grok parser to make sure to be correctly set for the rest of the workshop:
+The rule used is the following, copy paste it in your grok parser to make sure to be correctly set for the rest of the workshop:
 
 ```text
-first_parsing_rule_name %{ip:network.client.ip} %{notSpace:http.ident:nullIf("-")} %{notSpace:http.auth:nullIf("-")} \[%{date("dd/MMM/yyyy:HH:mm:ss Z"):date}\] "%{word:http.method} %{notSpace:http.url} HTTP\/%{number:http.version}" %{number:http.status_code} %{integer:network.bytes_written} "%{notSpace:http.referer}" "%{data:http.useragent}"
+rule %{ip:network.client.ip} %{notSpace:http.ident:nullIf("-")} %{notSpace:http.auth:nullIf("-")} \[%{date("dd/MMM/yyyy:HH:mm:ss Z"):date}\] "%{word:http.method} %{notSpace:http.url} HTTP\/%{number:http.version}" %{number:http.status_code} %{integer:network.bytes_written} "%{notSpace:http.referer}" "%{data:http.useragent}"
 ```
 
 With the following explanation:

@@ -4,6 +4,6 @@ Let's create a log monitor that sends an alert when there are too much 5xx logs 
 2. Export your log analytics as a monitor and define `2` as the alert threshold.
 3. Create a monitor notification template that inlines the `http.url_details.path` in the notification thanks to the following message:
 
-```text
-ALERT more than 2 5xx status code have been detected for {{http.url_details.path}} over thelast 5mins
+```
+ALERT more than 2 5xx status code have been detected for {{http.url_details.path}} over the last 5mins
 ```

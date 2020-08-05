@@ -1,6 +1,6 @@
-Time for your first exersise, the goal here is to parse the collected Apache log in order to extract all usefull information and assign them to a standard attribute.
+Time for your first exercise, the goal here is to parse the collected Apache log in order to extract all useful information and assign them to a standard attribute.
 
-_Pro tip: To help you in this exersie, check the exemples from the [Datadog Log Parsing documentation](https://docs.datadoghq.com/logs/processing/parsing/)._
+_Pro tip: To help you in this exercise, check the exemples from the [Datadog Log Parsing documentation](https://docs.datadoghq.com/logs/processing/parsing/)._
 
 Exercise:
 
@@ -11,12 +11,12 @@ Exercise:
 5. Define your first parsing rule in order to extract the following information:
 
 ```text
-first_parsing_rule_name %{ip:network.client.ip} %{notSpace:http.ident:nullIf("-")} %{notSpace:http.auth:nullIf("-")} \[%{date("dd/MMM/yyyy:HH:mm:ss Z"):date}\] ".*
+rule %{ip:network.client.ip} %{notSpace:http.ident:nullIf("-")} %{notSpace:http.auth:nullIf("-")} \[%{date("dd/MMM/yyyy:HH:mm:ss Z"):date}\] ".*
 ```
 
-Note the `.*` at the end of the rule `.` means any characters, `*` means any number of time. Adding this at the end of your rule allows it to match only the begining of your log.
+Note the `.*` at the end of the rule `.` means any character, `*` means any number of times. Adding this at the end of your rule allows it to match only the beginning of your log.
 
-The goal now is to extract all other information from your log. As shown above you need to create the following `%{MATCHER:ATTRIBUTE}` groups:
+The goal now is to extract all other information from your log with new `%{MATCHER:ATTRIBUTE}` groups:
 
 | Matcher    | Attribute               | Description                                  |
 | ---------- | ----------------------- | -------------------------------------------- |

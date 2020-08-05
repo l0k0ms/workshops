@@ -14,6 +14,6 @@ Go back in [your log explorer view](https://app.datadoghq.com/logs), your logs s
 
 ## Pattern view
 
-Because the message of your log is now properly formated, and the status corretly assigned the pattern feature is now way more accurate:
+Because the message of your log is now properly formatted, and the status correctly assigned the pattern feature is now way more accurate:
 
 ![pattern_2](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/pattern_2.png)

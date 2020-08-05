@@ -1,6 +1,6 @@
-Now that the log are parsed and each value could already be manipulated, let's push our processing further by enriching our logs.
+Now that the logs are parsed and each value can be manipulated, let's push our processing further by enriching the logs.
 
-The goal of this exercise is to assign a severity based on the status code of the log. An access log by definition doesn't have any status attached, but there is a way to assign your log a status depending on the value of the `http.status_code` attribute.
+The goal of this exercise is to assign a severity based on the status code of the log. An access log by definition doesn't have any severity attached, but there is a way to assign your log a severity depending on the value of the `http.status_code` attribute.
 
 Exercise:
 
@@ -11,7 +11,6 @@ Exercise:
     * `@http.status_code:[400 TO 499]`:  `warning`
     * `@http.status_code:[500 TO 599]`:  `error`
 
-    The value should be assgined to a new attribute: `http.status_code_category`
+    The value should be assigned to a new attribute: `http.status_code_category`
 
-2. Remap the newly created attribute as the status of the log thanks to the [Status Remapper](https://docs.datadoghq.com/logs/processing/processors/#log-status-remapper).
-
+2. Remap the newly created attribute as the status of the log with to the [Status Remapper](https://docs.datadoghq.com/logs/processing/processors/#log-status-remapper).

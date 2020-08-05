@@ -11,4 +11,3 @@ The configuration of the String builder processor should look like this:
 The configuration of the message remapper processor should look like this:
 
 ![message-remapper](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/message-remapper.png)
-
