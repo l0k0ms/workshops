@@ -43,15 +43,15 @@
             },
             {
                 "title": "[ANSWER] Enriching your logs - URL and UserAgent",
-                "text": "steps/log-enrich-url-ua-answer.md"
+                "text": "steps/log-enrich-url-ua-anwser.md"
             },
             {
                 "title": "[EXERCISE] Enriching your logs - Message",
                 "text": "steps/log-enrich-new-message.md"
             },
             {
-                "title": "[ANSWER] Enriching your logs- Message",
-                "text": "steps/log-enrich-answer-new-message.md"
+                "title": "[ANSWER] Enriching your logs - Message",
+                "text": "steps/log-enrich-new-message-answer.md"
             },
             {
               "title": "Beyond collection: Processing",
