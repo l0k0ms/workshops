@@ -1,6 +1,6 @@
 We saw how you could create pipelines in order to parse and enrich your logs in order to manipulate them and monitor them.
 
-In order to reduce your time to value, so that you can focus on what you do best: building amazing applications. Datadog already created OOTB pipelines that are automatically imported when the right `source` tag is set. The full list of OOTB pipelines and their corresponding source can be seen in the upper right corner of the [Log configuration page](https://app.datadoghq.com/logs/pipelines):
+In order to reduce your time to value, so that you can focus on what you do best: building amazing applications, Datadog has already created OOTB pipelines that are automatically imported when the right `source` tag is set. The full list of OOTB pipelines and their corresponding source can be seen in the upper right corner of the [Log configuration page](https://app.datadoghq.com/logs/pipelines) under the **Browse Pipeline Library button**:
 
 ![OOTB pipelines](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/ootb-pipelines.png)
 
