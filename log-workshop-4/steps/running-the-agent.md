@@ -28,6 +28,6 @@ This should have installed the Agent and log collection is enabled, check that t
 
 Once the Agent is up and running, let's generate some fake Apache logs with:
 
-`docker run -d  -it --rm mingrammer/flog -f apache_combined -l -n 100000 -d 0.2`{{execute}}
+`docker run --name flog -d -it --rm mingrammer/flog -f apache_combined -l -n 100000 -d 0.2`{{execute}}
 
 This uses the [mingrammer/flog](https://github.com/mingrammer/flog) in order to generate fake log in the `apache_combined` format.
