@@ -1,4 +1,4 @@
-When collecting traces and logs and after enabling their collection, you can now see your logs attached to your trace:
+When collecting traces and logs, after [enabling Log-Trace connection](https://docs.datadoghq.com/tracing/connect_logs_and_traces/), you can now see your logs attached to your trace:
 
 ![trace-with-logs](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/trace-with-logs.png)
 

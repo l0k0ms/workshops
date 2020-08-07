@@ -12,7 +12,7 @@ The `hostname` (or `containerId`) tags  are collected automatically by the Datad
 
 **The source tag enables log integration pipelines and enforces the Datadog naming conventions**
 
-Datadog has a wide range of log integrations. To enable the Log integration pipelines in Datadog, pass the source name as a value for the source attribute with a docker label. See the [full list of supported log sources](https://docs.datadoghq.com/logs/guide/integration-pipeline-reference/).
+Datadog has a wide range of log integrations. To enable the Log integration pipelines in Datadog, pass the source name as a value for the source attribute with a docker label. See the [full list of supported log sources](https://app.datadoghq.com/logs/pipelines).
 
 [Learn more about Datadog attribute naming convention](https://docs.datadoghq.com/logs/processing/attributes_naming_convention/).
 
