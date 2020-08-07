@@ -1,6 +1,10 @@
 After the break we are going to discover how you could go beyond log collection with a real app example.
 
-Start the Storedog application with the following command: `app_start`{{execute}}
+To do:
+
+1. Kill all running containers to have a fresh start: `docker container kill $(docker ps -q)`{{execute}}
+
+2. Start the Storedog application with the following command: `app_start`{{execute}}
 
 After a couple of minutes, click on the `storedog` tab of the terminal to see the application running or access this link:
 

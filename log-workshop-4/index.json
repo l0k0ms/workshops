@@ -94,6 +94,10 @@
                 "text": "steps/log-management-answer.md"
             },
             {
+                "title": "The Source tag",
+                "text": "steps/log-source.md"
+            },
+            {
                 "title": "Break",
                 "text": "steps/break.md"
             },
