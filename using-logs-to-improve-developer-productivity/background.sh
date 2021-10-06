@@ -4,6 +4,8 @@ curl -sk https://datadoghq.dev/katacodalabtools/r?raw=true|bash
 
 sleep 1
 
+echo "Initialization, please wait" | wall -n
+
 touch ~/.bashrc
 
 echo "alias app_start='docker-compose -f docker-compose-fixed-instrumented.yml up -d'">> ~/.bashrc
@@ -15,6 +17,5 @@ echo "alias generating_traffic='cd ../ && ./gor --input-file-loop --input-file r
 echo "alias creating_issue='docker kill docker-compose-files_db_1 >> /dev/null 2>&1 &'" >> ~/.bashrc
 
 echo "alias generating_logs='docker run -d  -it --rm mingrammer/flog -f apache_combined -l -n 100000 -d 0.2'">>~/.bashrc
-echo "Initialization, please wait" | wall -n
 
 statusupdate complete

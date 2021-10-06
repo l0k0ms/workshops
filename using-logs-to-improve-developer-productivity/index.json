@@ -156,7 +156,7 @@
     },
     "environment": {
         "uilayout": "terminal",
-        "uieditorpath": "/root/app-files/",
+        "uieditorpath": "/ecommworkshop/deploy/docker-compose/",
         "idePort": 23000,
         "showide": true,
         "hideHiddenFiles": true,
