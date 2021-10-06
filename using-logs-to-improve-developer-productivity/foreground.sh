@@ -7,7 +7,7 @@ while [ ! -f /root/app-files/docker-compose-files/docker-compose-fixed-instrumen
 
 echo "Cloning Application repository: Successful"
 
-cd /root/app-files/docker-compose-files
+cd /root/app-files/deploy/docker-compose/
 source ~/.bashrc
 
 clear
