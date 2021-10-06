@@ -6,7 +6,8 @@ Your logs are key to enhancing APM traces, providing metrics, detecting potentia
 
 This activity is split in two main parts:
 
-* Part one: We will focus on Apache logs and use them as examples to leverage log parsing, logging without limits, log monitors, and log analytics.
-* Part two: We will use a real application fully instrumented to demonstrate how logs can bring context to your metrics and traces.
+* Part one focuses on Apache logs and use them as examples to leverage log parsing, logging without limits, log monitors, and log analytics.
+
+* Part two uses a real application fully instrumented to demonstrate how logs can bring context to your metrics and traces.
 
 When you are ready to continue, click **Start Scenario**.

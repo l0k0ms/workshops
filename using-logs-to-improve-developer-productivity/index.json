@@ -18,7 +18,7 @@
                 "text": "steps/checking-logs.md"
             },
             {
-                "title": "Beyond collection: Processing",
+                "title": "Log Processing",
                 "text": "steps/log-processing.md"
             },
             {
@@ -54,11 +54,11 @@
                 "text": "steps/log-enrich-new-message-answer.md"
             },
             {
-              "title": "Beyond collection: Processing",
+              "title": "Log Processing",
               "text": "steps/log-processing-2.md"
             },
             {
-              "title": "Beyond collection: Manipulation",
+              "title": "Log Manipulation",
               "text": "steps/log-manipulation.md"
             },
             {
@@ -70,7 +70,7 @@
                 "text": "steps/facet-creation-answer.md"
             },
             {
-              "title": "Beyond collection: Monitoring",
+              "title": "Log Monitoring",
               "text": "steps/log-monitoring.md"
             },
             {
@@ -82,7 +82,7 @@
                 "text": "steps/monitor-creation-answer.md"
             },
             {
-                "title": "Beyond collection: Management as in Log Management",
+                "title": "Management as in Log Management",
                 "text": "steps/log-management.md"
             },
             {
@@ -135,23 +135,7 @@
             "text": "steps/finish.md"
         },
         "assets": {
-            "host01": [
-                {
-                    "file": "grademe",
-                    "target": "/usr/local/bin/",
-                    "chmod": "+x"
-                },
-                {
-                    "file": "prep-environment",
-                    "target": "/usr/local/bin/",
-                    "chmod": "+x"
-                },
-                {
-                    "file": "check-file",
-                    "target": "/usr/local/bin/",
-                    "chmod": "+x"
-                }
-            ]
+            "host01": []
         }
     },
     "environment": {
