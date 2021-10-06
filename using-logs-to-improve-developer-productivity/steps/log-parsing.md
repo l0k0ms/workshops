@@ -20,7 +20,7 @@ Note the `.*` at the end of the rule:
 
 Adding this at the end of your rule allows it to match only the beginning of a log. You should now have this:
 
-![First grok parser](https://raw.githubusercontent.com/l0k0ms/workshops/mainsing-logs-to-improve-developer-productivity/images/first_grok_parser.png)
+![First grok parser](https://raw.githubusercontent.com/l0k0ms/workshops/main/using-logs-to-improve-developer-productivity/images/first_grok_parser.png)
 
 ### Exercise
 

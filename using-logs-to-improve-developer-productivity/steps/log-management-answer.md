@@ -4,16 +4,16 @@
 
 To remove all logs with 2xx status code, add the following index filter:
 
-![index-filter](https://raw.githubusercontent.com/l0k0ms/workshops/mainsing-logs-to-improve-developer-productivity/images/index-filter.png)
+![index-filter](https://raw.githubusercontent.com/l0k0ms/workshops/main/using-logs-to-improve-developer-productivity/images/index-filter.png)
 
 ## Generating a metrics
 
 To keep track of your KPIs, the following metric should be generated:
 
-![generate-metric](https://raw.githubusercontent.com/l0k0ms/workshops/mainsing-logs-to-improve-developer-productivity/images/generate-metric.png)
+![generate-metric](https://raw.githubusercontent.com/l0k0ms/workshops/main/using-logs-to-improve-developer-productivity/images/generate-metric.png)
 
 ## Bonus
 
 After enabling the metrics, you get a dashboard like this:
 
-![log-dashboard](https://raw.githubusercontent.com/l0k0ms/workshops/mainsing-logs-to-improve-developer-productivity/images/log-dashboard.png)
+![log-dashboard](https://raw.githubusercontent.com/l0k0ms/workshops/main/using-logs-to-improve-developer-productivity/images/log-dashboard.png)
