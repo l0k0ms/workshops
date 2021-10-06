@@ -2,8 +2,8 @@
 
 This is what your query should look like:
 
-![Query for monitor](https://raw.githubusercontent.com/l0k0ms/workshops/main/using-logs-to-improve-developer-productivity/images/query-for-monitor.png)
+![Query for monitor](https://raw.githubusercontent.com/l0k0ms/workshops/master/using-logs-to-improve-developer-productivity/images/query-for-monitor.png)
 
 When creating a log monitor, the group that triggers the monitor is available in the monitor notification message:
 
-![Monitor configuration](https://raw.githubusercontent.com/l0k0ms/workshops/main/using-logs-to-improve-developer-productivity/images/monitor-configuration.png)
+![Monitor configuration](https://raw.githubusercontent.com/l0k0ms/workshops/master/using-logs-to-improve-developer-productivity/images/monitor-configuration.png)

@@ -2,7 +2,7 @@
 
 Your grok parser should look like this:
 
-![Grok config](https://raw.githubusercontent.com/l0k0ms/workshops/main/using-logs-to-improve-developer-productivity/images/grok-config.png)
+![Grok config](https://raw.githubusercontent.com/l0k0ms/workshops/master/using-logs-to-improve-developer-productivity/images/grok-config.png)
 
 The following rule is used. Copy and paste it in your grok parser to make sure it's correct for the rest of the workshop:
 

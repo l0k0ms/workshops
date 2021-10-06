@@ -17,7 +17,7 @@ To run the Agent:
 * Select the **Getting Started** entry in [the Logs menu](https://app.datadoghq.com/logs/).
 * Find the Docker Agent installation command, and copy-paste it in the terminal.
 
-    ![log getting started](https://raw.githubusercontent.com/l0k0ms/workshops/main/using-logs-to-improve-developer-productivity/images/logs-gs.png)
+    ![log getting started](https://raw.githubusercontent.com/l0k0ms/workshops/master/using-logs-to-improve-developer-productivity/images/logs-gs.png)
 
 This installs the Agent and enables log collection. Check that the Agent is running with `docker ps`{{execute}}
 
