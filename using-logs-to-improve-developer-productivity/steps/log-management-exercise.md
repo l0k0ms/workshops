@@ -5,5 +5,4 @@ Let's remove the highest cardinality status code from the logs, but keep track o
 
 #### Bonus
 
-1. Enable the two telemetry metrics in the Generate metric section.
-2. Import the [Log Estimated usage dashboard](https://docs.datadoghq.com/logs/guide/logs-monitors-on-volumes/#estimated-usage-dashboard) in your account.
+Import the [Log Estimated usage dashboard](https://docs.datadoghq.com/resources/json/estimated_log_usage_dashboard_configuration.json) in your account.

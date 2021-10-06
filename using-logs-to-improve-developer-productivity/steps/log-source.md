@@ -3,7 +3,7 @@ We saw how you could create pipelines to parse and enrich your logs, in order to
 To reduce your time-to-value so that you can focus on what you do best: building amazing applications, Datadog has already created out-of-the-box pipelines that are automatically imported when the right `source` tag is set.
 The full list of OOTB pipelines and their corresponding source can be seen in the upper right corner of the [Log configuration page](https://app.datadoghq.com/logs/pipelines) under the **Browse Pipeline Library** button:
 
-![OOTB pipelines](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/ootb-pipelines.png)
+![OOTB pipelines](https://raw.githubusercontent.com/l0k0ms/workshops/main/using-logs-to-improve-developer-productivity/images/ootb-pipelines.png)
 
 Exercise:
 
@@ -13,8 +13,8 @@ Exercise:
 
 Now go to the log configuration page to see the Apache pipeline activated automatically:
 
-![apache pipeline](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/apache_pipeline.png)
+![apache pipeline](https://raw.githubusercontent.com/l0k0ms/workshops/main/using-logs-to-improve-developer-productivity/images/apache_pipeline.png)
 
 In your log explorer you also now have Apache saved views that allow you to focus on specific log use-cases:
 
-![apache saved views](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/apache_saved_views.png)
+![apache saved views](https://raw.githubusercontent.com/l0k0ms/workshops/main/using-logs-to-improve-developer-productivity/images/apache_saved_views.png)

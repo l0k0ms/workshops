@@ -14,13 +14,10 @@ For this workshop, we are going to cover log collection from a Docker environmen
 To run the Agent:
 
 * [Connect to your Datadog application](https://app.datadoghq.com).
-* Enable the log management product by [entering the Logs menu](https://app.datadoghq.com/logs/activation) and clicking **Getting Started**:
-
-    ![log enable](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/log-enable.png)
-
+* Select the **Getting Started** entry in [the Logs menu](https://app.datadoghq.com/logs/).
 * Find the Docker Agent installation command, and copy-paste it in the terminal.
 
-    ![log getting started](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/logs-gs.png)
+    ![log getting started](https://raw.githubusercontent.com/l0k0ms/workshops/mainsing-logs-to-improve-developer-productivity/images/logs-gs.png)
 
 This installs the Agent and enables log collection. Check that the Agent is running with `docker ps`{{execute}}
 

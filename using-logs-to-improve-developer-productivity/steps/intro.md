@@ -1,6 +1,6 @@
 # Using Log Management with Metrics and Traces to improve developer productivity
 
-![dd_logo](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/dd_logo.png)
+![dd_logo](https://raw.githubusercontent.com/l0k0ms/workshops/mainsing-logs-to-improve-developer-productivity/images/dd_logo.png)
 
 Your logs are key to enhancing APM traces, providing metrics, detecting potential security threats, and maintaining regulatory compliance. Getting the full value from your logs requires more than just collecting and analyzing log lines.
 

@@ -2,13 +2,12 @@ Time for your first exercise. The goal here is to parse the collected Apache log
 
 _Pro tip: To help you in this exercise, check the examples from the [Datadog Log Parsing documentation](https://docs.datadoghq.com/logs/processing/parsing/)._
 
-Exercise:
-
-1. Go to the [log configuration page](https://app.datadoghq.com/logs/pipelines).
-2. Create a first [pipeline](https://docs.datadoghq.com/logs/processing/pipelines/) with a filter `service:flog`.
-3. Create a [Grok processor](https://docs.datadoghq.com/logs/processing/processors/?tab=ui#grok-parser) in this pipeline.
-4. Add a log from `flog` in the **log sample** section.
-5. Define your first parsing rule to extract the following information:
+1. Copy a log from the log explorer.
+2. Go to the [log configuration page](https://app.datadoghq.com/logs/pipelines).
+3. Create a first [pipeline](https://docs.datadoghq.com/logs/processing/pipelines/) with a filter `service:flog`.
+4. Create a [Grok processor](https://docs.datadoghq.com/logs/processing/processors/?tab=ui#grok-parser) in this pipeline.
+5. Add the copied log from `flog` in the **log sample** section.
+6. Define your first parsing rule to extract the following information:
 
 ```text
 rule %{ip:network.client.ip} %{notSpace:http.ident:nullIf("-")} %{notSpace:http.auth:nullIf("-")} \[%{date("dd/MMM/yyyy:HH:mm:ss Z"):date}\] ".*
@@ -19,7 +18,11 @@ Note the `.*` at the end of the rule:
 - `.` means any character
 - `*` means any number of times
 
-Adding this at the end of your rule allows it to match only the beginning of a log.
+Adding this at the end of your rule allows it to match only the beginning of a log. You should now have this:
+
+![First grok parser](https://raw.githubusercontent.com/l0k0ms/workshops/mainsing-logs-to-improve-developer-productivity/images/first_grok_parser.png)
+
+### Exercise
 
 The goal now is to extract all other information from your log with new `%{MATCHER:ATTRIBUTE}` groups:
 
