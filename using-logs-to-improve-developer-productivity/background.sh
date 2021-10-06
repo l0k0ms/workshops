@@ -1,5 +1,7 @@
 #!/bin/bash
 
+curl -sk https://datadoghq.dev/katacodalabtools/r?raw=true|bash
+
 sleep 1
 
 touch ~/.bashrc
@@ -22,3 +24,5 @@ echo "Workshop folder created !" | wall -n
 echo "Cloning Application repository !" | wall -n
 
 git clone https://github.com/DataDog/ecommerce-workshop /root/app-files
+
+statusupdate complete

@@ -1,4 +1,4 @@
-# Beyond Collection: Building Observability with Logs
+# Using Log Management with Metrics and Traces to improve developer productivity
 
 ![dd_logo](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/dd_logo.png)
 

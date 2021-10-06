@@ -1,0 +1,12 @@
+{
+    "title": "Using Log Management with Metrics and Traces to improve developer productivity",
+    "courses": [
+        {
+            "pathway_id": "datadog",
+            "course_id": "using-logs-to-improve-developer-productivity",
+            "id": "using-logs-to-improve-developer-productivity",
+            "title": "Using Log Management with Metrics and Traces to improve developer productivity.",
+            "description": "By combining metrics, tracing, and logs, increase your observability and reduce mean time to detection and resolution of operational incidents."
+        }
+    ]
+}

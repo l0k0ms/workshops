@@ -1,10 +1,10 @@
 # Collection
 
-Datadog is a SaaS product, so to see your logs in Datadog you must collect them from your hosts, containers, applications, browsers, and serverless functions and send them to Datadog.
+Datadog is a SaaS product, to see your logs in Datadog you must collect them from your hosts, containers, applications, browsers, and serverless functions and send them to Datadog.
 
 For details on how to collect logs from your environment, see:
 
-* [In the Datadog Log collection documentation.](https://docs.datadoghq.com/logs/log_collection/?tab=http)
+* [In the Datadog Log collection documentation.](https://docs.datadoghq.com/logs/log_collection/)
 * [In the Getting started section of your Datadog application.](https://app.datadoghq.com/logs/onboarding)
 
 For this workshop, we are going to cover log collection from a Docker environment via [the Agent](https://docs.datadoghq.com/agent/).

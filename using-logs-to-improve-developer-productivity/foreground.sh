@@ -11,3 +11,5 @@ cd /root/app-files/docker-compose-files
 source ~/.bashrc
 
 clear
+
+prepenvironment

@@ -1,6 +1,6 @@
 {
-    "title": "Beyond Collection: Building Observability with Logs",
-    "description": "Learning all about the word Management in Log Management.",
+    "title": "Using Log Management with Metrics and Traces to improve developer productivity",
+    "description": "By combining metrics, tracing, and logs, increase your observability and reduce mean time to detection and resolution of operational incidents.",
     "time": "2 hours 30 mins",
     "difficulty": "Beginner",
     "details": {
@@ -173,6 +173,6 @@
         ]
     },
     "backend": {
-        "imageid": "datadog-base-v1"
+        "imageid": "datadog-base-v3"
     }
 }
