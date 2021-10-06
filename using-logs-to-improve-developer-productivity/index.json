@@ -62,14 +62,6 @@
               "text": "steps/log-manipulation.md"
             },
             {
-                "title": "[EXERCISE] Facets creation and manipulation",
-                "text": "steps/facet-creation.md"
-            },
-            {
-                "title": "[ANSWER] Facets creation and manipulation",
-                "text": "steps/facet-creation-answer.md"
-            },
-            {
               "title": "Log Monitoring",
               "text": "steps/log-monitoring.md"
             },
