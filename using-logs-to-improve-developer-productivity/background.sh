@@ -17,12 +17,4 @@ echo "alias creating_issue='docker kill docker-compose-files_db_1 >> /dev/null 2
 echo "alias generating_logs='docker run -d  -it --rm mingrammer/flog -f apache_combined -l -n 100000 -d 0.2'">>~/.bashrc
 echo "Initialization, please wait" | wall -n
 
-mkdir /root/app-files
-
-echo "Workshop folder created !" | wall -n
-
-echo "Cloning Application repository !" | wall -n
-
-git clone https://github.com/DataDog/ecommerce-workshop /root/app-files
-
 statusupdate complete

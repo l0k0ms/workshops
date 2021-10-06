@@ -3,11 +3,12 @@
 export POSTGRES_USER=postgres
 export POSTGRES_PASSWORD=postgres
 
-while [ ! -f /root/app-files/deploy/docker-compose/docker-compose-fixed-instrumented.yml ]; do sleep 2; done
+while [ ! -f /ecommworkshop/deploy/docker-compose//docker-compose-fixed-instrumented.yml ]; do sleep 2; done
 
-echo "Cloning Application repository: Successful"
+echo "Workshop content is here"
 
-cd /root/app-files/deploy/docker-compose/
+cd ecommworkshop/deploy/docker-compose/
+
 source ~/.bashrc
 
 clear
