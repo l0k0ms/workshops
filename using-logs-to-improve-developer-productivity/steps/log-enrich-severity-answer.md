@@ -4,10 +4,10 @@
 
 The configuration of the category processor should look like this:
 
-![category-processor](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/category-processor.png)
+![category-processor](https://raw.githubusercontent.com/l0k0ms/workshops/master/using-logs-to-improve-developer-productivity/images/category-processor.png)
 
 ## Status remapper
 
 The configuration of the status remapper should look like this:
 
-![status-remapper](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/status-remapper.png)
+![status-remapper](https://raw.githubusercontent.com/l0k0ms/workshops/master/using-logs-to-improve-developer-productivity/images/status-remapper.png)

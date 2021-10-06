@@ -11,4 +11,4 @@ Out of the box, the Docker integrations installed a Dashboard:
 
 Note that on any given dashboard, you can click on a displayed metric to switch to the corresponding logs:
 
-![metrics switch to logs](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/metrics-to-log.png)
+![metrics switch to logs](https://raw.githubusercontent.com/l0k0ms/workshops/master/using-logs-to-improve-developer-productivity/images/metrics-to-log.png)

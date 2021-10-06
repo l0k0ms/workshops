@@ -14,7 +14,7 @@ After a couple of minutes, click on the `Storedog` tab of the terminal to see th
 
 You should see this page:
 
-![app_homepage](https://raw.githubusercontent.com/l0k0ms/workshops/master/log-workshop-4/images/app_homepage.png)
+![app_homepage](https://raw.githubusercontent.com/l0k0ms/workshops/master/using-logs-to-improve-developer-productivity/images/app_homepage.png)
 
 Refresh the Application page, click around to begin generating metrics, APM traces, and logs for your application.
 
