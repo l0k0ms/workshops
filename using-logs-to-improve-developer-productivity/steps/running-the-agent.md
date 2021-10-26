@@ -21,6 +21,14 @@ To run the Agent:
 
 This installs the Agent and enables log collection. Check that the Agent is running with `docker ps`{{execute}}
 
+If the Agent is running you should get the following result:
+
+```shell
+$ docker ps
+CONTAINER ID   IMAGE                  COMMAND                CREATED         STATUS                            PORTS                NAMES
+96e1bbc04cfb   datadog/agent:latest   "/bin/entrypoint.sh"   5 seconds ago   Up 4 seconds (health: starting)   8125/udp, 8126/tcp   datadog-agent
+```
+
 ## Log generation
 
 Once the Agent is up and running, generate some fake Apache logs with:

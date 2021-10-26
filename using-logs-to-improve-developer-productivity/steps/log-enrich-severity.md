@@ -4,13 +4,11 @@ The goal of this exercise is to assign a severity based on the status code of th
 
 Exercise:
 
-1. Create a [category processor](https://docs.datadoghq.com/logs/processing/processors/#category-processor) in your pipeline, and add four categories to it:
+1. Create a [category processor](https://docs.datadoghq.com/logs/processing/processors/#category-processor) in your pipeline, set target category attribute to `http.status_code_category` and add four categories to it:
 
     * `@http.status_code:[200 TO 299]`:  `ok`
     * `@http.status_code:[300 TO 399]`:  `notice`
     * `@http.status_code:[400 TO 499]`:  `warning`
     * `@http.status_code:[500 TO 599]`:  `error`
-
-    The value should be assigned to a new attribute: `http.status_code_category`
 
 2. Remap the newly created attribute as the status of the log with to the [Status Remapper](https://docs.datadoghq.com/logs/processing/processors/#log-status-remapper).

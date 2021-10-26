@@ -8,7 +8,7 @@ To do:
 
 3. Start the Storedog application with the following command: `app_start`{{execute}}
 
-After a couple of minutes, click on the `Storedog` tab of the terminal to see the application running, or click this link:
+After a couple of minutes, click on the `Storedog` tab of the terminal to see the application running, or use this link:
 
     https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com/
 

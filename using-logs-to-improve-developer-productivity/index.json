@@ -26,10 +26,6 @@
               "text": "steps/log-parsing.md"
             },
             {
-                "title": "[ANSWER] Parsing",
-                "text": "steps/log-parsing-answer.md"
-            },
-            {
                 "title": "[EXERCISE] Enriching your logs - Severity",
                 "text": "steps/log-enrich-severity.md"
             },
